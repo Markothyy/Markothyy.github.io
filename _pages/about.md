@@ -6,13 +6,14 @@ title: "About David Florian"
 
 ## Education
 
-David prides himself on his diverse skill set. His most prominent fields of expertise are additive manufacturing (i.e., 3D printing) and biotechnology. 
+Mark prides himself on his diverse skill set. His most prominent fields of expertise are additive manufacturing (i.e., 3D printing) and fluid analysis. 
 
-* University of Virginia
-  * BS Mathematics
-  * BS Biomedical Engineering
-* Vanderbilt University
-  * PhD Biomedical Engineering
+* Vanderbilt University 
+  * BS Mechanical Engineering
+  * Minor Digital Fabrication 
+* Lipscomb University
+  * BS Mechanical Engineering
+  * Minor Applied Mathamatics
 
 ## Technical Skills
 
