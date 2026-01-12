@@ -1,5 +1,5 @@
 ---
-title: "Cyber Scooter"
+title: "Generative Design Drone"
 excerpt: "This custom electric vehicle can reach speeds of up 30 MPH and has a range of over 50 miles!"
 header:
   image: /assets/img/Cyber-Scooter-Banner.jpg
