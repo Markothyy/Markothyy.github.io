@@ -9,7 +9,7 @@ header:
   actions:
     - label: "My Projects"
       url: "/portfolio/"
-excerpt: "Mark Sedek is an engineering student with a passion for teaching and the open-source community. His area of expertise is 3D printing, with an emphasis on large format pellet extrusion and selective laser sintering."
+excerpt: "Mark Sedek is an engineering student with a passion for aerospace engineering, aiming for the defense/manufacturing industry. Experience with computer aided design and manufaturing tools, as well has hands on skills."
 feature_row:
   - image_path: assets/img/1767337100637.jpg
     alt: "Vanderbilt Aerospace Design Lab Work"
