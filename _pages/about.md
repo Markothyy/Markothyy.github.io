@@ -19,7 +19,7 @@ Mark prides himself on his diverse skill set. His most prominent fields of exper
 
 Mark can operate a number of different computer controlled (CNC) fabrication tools, computer aided design (CAD) software, and coding languages. Experience was gained from projects, courses, and organizations such as the Vanderbilt Aerospace Design Lab:
 
-* SOLIDWORKS, Autodesk Fusion 360, Onshape
+* SOLIDWORKS, Autodesk Fusion 360, Onshape, Fusion360 Sheet Metal
 * OpenRocket, SimScale, ANSYS
 * MATLAB, Python, C/C++, LabVIEW, Excel
 * 3D Printing, CNC Lathe, CNC Milling, CNC Gantry
