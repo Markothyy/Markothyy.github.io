@@ -31,7 +31,7 @@ The LEDs provide feedback to the user: green indicates the pump is running, yell
 ## Operating Limits 
 The theoretical maximum flow rate would be based on the maximum speed that the stepper motor can run out which is 1000 . This means that the maximum flow 𝑆𝑡𝑒𝑝𝑠/𝑠 rate for the small syringe would be 6.54 , and the maximum flow rate for the large 𝑚𝐿/𝑚𝑖𝑛 syringe would be 10.08 . 𝑚𝐿/𝑚𝑖𝑛 The smallest theoretical output would be that which is output by one step which is 0.109 μL for the small syringe and 0.168 μL for the large syringe.
 ## Code for Syringe Pump 
-[Code Repository ](https://github.com/Markothyy/Syringe-Pump-Project-Code/tree/main).
+[Code Repository](https://github.com/Markothyy/Syringe-Pump-Project-Code/tree/main).
 
 
 # CAD Model
