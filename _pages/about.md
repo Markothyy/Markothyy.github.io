@@ -8,7 +8,7 @@ title: "About Mark Sedek"
 
 Mark prides himself on his diverse skill set. His most prominent fields of expertise are additive manufacturing (i.e., 3D printing) and fluid analysis. 
 
-* Vanderbilt University 
+* Vanderbilt University, Expected Graduation Date May 2027
   * BS Mechanical Engineering
   * Minor Digital Fabrication 
 * Lipscomb University
