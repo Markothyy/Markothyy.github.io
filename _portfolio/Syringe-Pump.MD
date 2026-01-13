@@ -1,5 +1,5 @@
 ---
-title: "Syringe Pump"
+title: "Rapid Prototype Syringe Pump"
 excerpt: "A DIY Medical Syringe Pump using addtive manufacturing techniques and microelectronics."
 header:
   image: /assets/img/Bettersyringpump.png
