@@ -9,7 +9,7 @@ header:
   actions:
     - label: "My Projects"
       url: "/portfolio/"
-excerpt: "Mark Sedek is an engineering student with a passion for aerospace engineering, aiming for the defense/manufacturing industry. Experience with computer aided design and manufaturing tools, as well has hands on skills."
+excerpt: "Mark Sedek is an engineering student with a passion for aerospace engineering, aiming for the defense/manufacturing industry. Experience with computer aided design and manufaturing tools, as well has hands on skills. Mark is interested in roles in engineering such as test, system, and build engineering. "
 feature_row:
   - image_path: assets/img/1767337100637.jpg
     alt: "Vanderbilt Aerospace Design Lab Work"
