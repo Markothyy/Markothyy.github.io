@@ -15,6 +15,19 @@ Mark prides himself on his diverse skill set. His most prominent fields of exper
   * BS Mechanical Engineering
   * Minor Applied Mathamatics
 
+## Work Experience 
+
+* Vanderbilt University Aerospace Design Laboratory  
+  * Fabricate jig for improving carbon fiber airframe (pre-rolled tubes/couplers) development
+  * Fabricating full scale rocket airframe prototypes
+  * Contribute to full-scale vehicle build of rocket for 2026 NASA Student Launch Competition 
+* Lipscomb University Undergraduate Researcher 
+  * NSF PFE: RIEF Award 2024525
+  * Co-authored a published research paper on engineering diversity, equity, and inclusion, to be implemented into engineering firms to create more inclusive environments within the engineering workforce
+  * Independently created MATLAB script to organize large sets of text-based response data from multiple interviews
+  * Coded diagrams displaying data from interviews to illustrate the frequency of codes mentioned during interviews used in poster
+  * Poster presented at the Lipscomb Student Scholars Symposium and ASEE Conference
+
 ## Technical Skills
 
 Mark can operate a number of different computer controlled (CNC) fabrication tools, computer aided design (CAD) software, and coding languages. Experience was gained from projects, courses, and organizations such as the Vanderbilt Aerospace Design Lab:
