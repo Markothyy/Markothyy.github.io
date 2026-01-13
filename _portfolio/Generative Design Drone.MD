@@ -1,9 +1,9 @@
 ---
 title: "Generative Design Drone"
-excerpt: "This custom electric vehicle can reach speeds of up 30 MPH and has a range of over 50 miles!"
+excerpt: "Using Autodesk's Fusion 360 Generative Design Feature I made a drone"
 header:
-  image: /assets/img/Cyber-Scooter-Banner.jpg
-  teaser: /assets/img/Cyber-Scooter-TH.jpg
+  image: /assets/img/drone.jpg
+  teaser: /assets/img/drone.jpg
 gallery:
   - url: /assets/img/Cyber-Scooter-1.jpg
     image_path: assets/img/Cyber-Scooter-1.jpg
