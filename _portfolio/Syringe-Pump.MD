@@ -12,9 +12,43 @@ gallery:
 # Introduction 
 Syringe pumps are motor-driven devices used to deliver precise volumes of fluid at a wide range of flow rates. They have many medical applications as well as laboratory and research settings. They operate by turning a lead screw with a motor which then in turn moves a carriage that pushes the syringe plunger forward and expels a controlled amount of liquid at a set pace. These pumps offer several advantages over other fluid delivery methods. For one, high sterility and minimal cross-contamination make them applicable in medical application. Syringes can also be easily swapped. More so, there is an ability to control flow rate and resistance. As a result, they are commonly used in labs for microfluidics and for administering critical therapeutics in medical settings. However, syringe pumps are typically unable to recirculate fluids and must be reloaded once the syringe is empty. Despite their relatively simple mechanical and electronic design, commercial syringe pumps often cost several hundred dollars, even for entry-level models, which limits their accessibility, particularly in low-resource or educational environments. To address this, a low-cost, open-source syringe pump built from 3D-printed components and Arduino-based controls is presented, with the goal of replicating the core functionality of these expensive commercial models while trying to make the device more accessible.
 
-|A|B|
-|---|---|
-|Apple|Banana|
+| Off-the-shelf Components  | Count |
+| ------------- | ------------- |
+| M3x0.5 | 17  |
+| M3 Heat Inserts | 8  |
+| Arduino Uno  | 1  |
+| Breadboard  | 1  |
+| Mean Well RT-65D Power Supply  | 1 |
+| Limit Switch  | 1 |
+| 3-color RGB LED  | 1 |
+| Latching Button  | 1 |
+| NEMA-17 Motor  | 1 |
+| 8x8x250mm Lead Screw  | 1 |
+| 8x200mm Linear Rod  | 1 |
+| 5mm to 8mm Flexible Coupler  | 1 |
+| 8x8mm Brass Nut  | 1 |
+| 8mm Shaft Collar  | 4  |
+| V-Slot 20x40x350 Aluminum Extrusion  | 1 |
+| Flanged Ball Bearing  | 2  |
+| M3x 10   | 6  |
+| M5 Tee Nuts   | 6 |
+| M5 x 8 Bolts  | 6  |
+| M3x8 Thread forming screws  | 4  |
+| 8mm Linear Bearing  | 1  |
+| M4x0.7 Alloy Steel Cup-Point Set Screw  | 2  |
+| M3x0.5 Alloy Steel Socket Head Screw  | 2 |
+| Potentiometer  | 1 |
+| Momentary Button  | 1 |
+| Stepper Motor Driver Module  | 1 |
+
+
+| 3D Printed Components  | Count |
+| ------------- | ------------- |
+| Motor Mounting Plate  | 1  |
+| Housing (Box Pieces)   | 5  |
+| Carriage  | 1  |
+| Simple End Support  | 1  |
+| Syringe End Support  | 1  |
 
 # Design Description 
 ## Mechanical operation of the syringe pump
