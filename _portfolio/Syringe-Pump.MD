@@ -59,7 +59,8 @@ Syringe pumps are motor-driven devices used to deliver precise volumes of fluid 
 6. To have the syringe pump run until completion or until being paused press the “Stop/Start” button.
 7. While the device is in motion to pause it press the “Stop/Start” button
 
-/assets/img/rendersyringe.png
+  image: /assets/img/rendersyringe.png
+![Syringe pump render](/assets/img/rendersyringe.png)
 
 # Design Description 
 ## Mechanical operation of the syringe pump
