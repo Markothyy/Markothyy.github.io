@@ -59,6 +59,8 @@ Syringe pumps are motor-driven devices used to deliver precise volumes of fluid 
 6. To have the syringe pump run until completion or until being paused press the “Stop/Start” button.
 7. While the device is in motion to pause it press the “Stop/Start” button
 
+/assets/img/rendersyringe.png
+
 # Design Description 
 ## Mechanical operation of the syringe pump
 The syringe pump works by using a lead screw driven by a stepper motor. The plunger is moved forward or backward by a carriage that rides on a smooth rod using linear bearings.The design of the syringe pump allows for multiple syringe diameters by making the slots on both the carriage and the end support able to hold and support either syringe size. This allows for the general design of the syringe pump to work well for both, as only the code needs to know what diameter syringe is being used. The model itself can easily hold either size while still allowing for regular output (no vibrations or looseness).
