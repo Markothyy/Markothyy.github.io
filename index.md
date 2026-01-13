@@ -17,10 +17,10 @@ feature_row:
     excerpt: "Vehicle airframe development, and full-scale rocket manufacturing"
   - image_path: assets/img/drone.jpg
     alt: "placeholder image 2"
-    title: "Drone using Generative Design"
+    title: "Generative Design Experience"
     excerpt: "Develop a lightweight drone with Autodesk Fusion 360 Generative Design"
   - image_path: assets/img/Bettersyringpump.png
-    title: "Medical Syringe Pump"
+    title: "Rapid Prototyping Projects"
     excerpt: "Prototype scale of a medical syringe pump "
 ---
 
