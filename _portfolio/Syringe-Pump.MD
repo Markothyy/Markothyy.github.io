@@ -13,6 +13,7 @@ gallery:
 Syringe pumps are motor-driven devices used to deliver precise volumes of fluid at a wide range of flow rates. They have many medical applications as well as laboratory and research settings. They operate by turning a lead screw with a motor which then in turn moves a carriage that pushes the syringe plunger forward and expels a controlled amount of liquid at a set pace. These pumps offer several advantages over other fluid delivery methods. For one, high sterility and minimal cross-contamination make them applicable in medical application. Syringes can also be easily swapped. More so, there is an ability to control flow rate and resistance. As a result, they are commonly used in labs for microfluidics and for administering critical therapeutics in medical settings. However, syringe pumps are typically unable to recirculate fluids and must be reloaded once the syringe is empty. Despite their relatively simple mechanical and electronic design, commercial syringe pumps often cost several hundred dollars, even for entry-level models, which limits their accessibility, particularly in low-resource or educational environments. To address this, a low-cost, open-source syringe pump built from 3D-printed components and Arduino-based controls is presented, with the goal of replicating the core functionality of these expensive commercial models while trying to make the device more accessible.
 
 |A|B|
+|---|---|
 |Apple|Banana|
 
 # Design Description 
