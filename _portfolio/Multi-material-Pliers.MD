@@ -1,5 +1,5 @@
 ---
-title: "Muli-Material Plyers"
+title: "Muli-Material Pliers"
 excerpt: "A rapid prototyped pair of pliers capable of gripping items using TPU and PETG"
 header:
   image: /assets/img/Bettersyringpump.png
