@@ -8,16 +8,9 @@ gallery:
   - image_path: assets/img/wiresimpli.png
    
 ---
-
-# Design 
-
-
-
-
-
-
+# Design Methodology 
+My design is meant to replicate a very simplified version of a pair of pliers. I first defined what filiments I should use. Then I assigned ABS to the arms/jaws for rigidity and TPU 95A to the center section to act as a spring that reopens the pliers after each squeeze. With the jaw length set to 85.051 mm, the ABS jaws provide a stiff, precise grip while the TPU element supplies the force that a spring would on real pliers. The key rationale was the interface between rigid ABS and flexible TPU: because multi-material bonding depends on factors like surface energy/chemistry, and shrinkage/cooling behavior. I treated the ABS TPU transition as a dovetail style form fit joint, rather than using a multimaterial printer that would print the two materials and bond them together before completing the part. Using multimaterial printers can sacrifice time, and bring up the possibility of print failure since the filiments being used are alternating within each layer. Below was a center piece I had fabricated before reaching the final product. While this infill style till can make the pliers functional, the optimal infill would be rectilinear, since we are counting on the infill supports to "fail" so that the pliers work. 
 
 # CAD Model
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b6028115441302eab5825b7?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-
 {% include gallery caption="Final Product made in Vanderbilt Digital Fabrication Labratory using student made Voron printers." %}
