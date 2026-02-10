@@ -17,6 +17,12 @@ Print in place applications are used in various industies such as the aerospace 
 # Slicing 
 In order for the pliers to work, some variables need to be changed within the print settings of the slicing software. First is to change the perimiter and shells settings. First, remove the solid layers from the "Horizontal shells" area from both the top and bottom. Doing this setting now exposes the infill of the center part. Next is to change the infill setting. For TPU, Gyroid or another infill type may be automatically selected as it is the best setting for most TPU prints just due to the mechanical properties of TPU. I switched this setting to rectilinear so that I use the infill "failure" as a spring for my pliers. The infill settings for my ABS jaws and arms were set to 23% infill to give it a strong structure so its capable of deforming the TPU piece without breaking. The center TPU piece for it to function required horizontial layers from the top and bottom to be removed. On my slicer they were automattically set to 3 layers which were changed to 0, again to show the TPU supports that will ultimately allow us to bend the pliers.The rectilinear infill for the TPU part was set at 10%, other low values work as well, keeping in mind however the ability for the TPU to "spring" back. Below is the G-code preview of the center piece after adjustments have been made. Also below is the G-code preview of the jaws and arm, as well as a CAD model to observe the online version of the model. 
 
+![Arms and Jaws Piece Preview](/assets/img/Screenshotofpliersinslicer.png)
+
+![Center TPU Piece Preview](/assets/img/Centerpartslicer.png)
+
+
+
 # CAD Model
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b6028115441302eab5825b7?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
