@@ -20,6 +20,9 @@ In order for the pliers to work, some variables need to be changed within the pr
 # CAD Model
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b6028115441302eab5825b7?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
+![Pliers opening/closing](assets/img/IMG_2523-ezgif.com-video-to-gif-converter.mo)
+
+
 # Final Product Photo Gallery  
 
 {% include gallery caption="Final Product made in Vanderbilt Digital Fabrication Labratory using student made Voron printers. (Left to right) Figure 1 is the final product after tolerance adjustments and slicer adjustments, Figure 2 shows that the pliers are capable of behaving similar to pliers, Figure 3 shows the original center piece with different infill settings, these settings would have made the pliers harder to squeeze." %}
