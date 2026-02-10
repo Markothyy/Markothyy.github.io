@@ -5,7 +5,10 @@ header:
   image: /assets/img/CadA1_2026-Feb-02_01-42-20AM-000_CustomizedView9265646143_png.png
   teaser: /assets/img/CadA1_2026-Feb-02_01-42-20AM-000_CustomizedView9265646143_png.png
 gallery:
-  - image_path: assets/img/wiresimpli.png
+  - image_path: assets/img/IMG_2440.JPG
+  - image_path: assets/img/IMG_2523-ezgif.com-video-to-gif-converter.mo
+  - image_path: assets/img/IMG_2439.JPG
+
    
 ---
 # Design Methodology 
@@ -19,4 +22,4 @@ In order for the pliers to work, some variables need to be changed within the pr
 
 # Final Product Photo Gallery  
 
-{% include gallery caption="Final Product made in Vanderbilt Digital Fabrication Labratory using student made Voron printers." %}
+{% include gallery caption="Final Product made in Vanderbilt Digital Fabrication Labratory using student made Voron printers. (Left to right) Figure 1 is the final product after tolerance adjustments and slicer adjustments, Figure 2 shows that the pliers are capable of behaving similar to pliers, Figure 3 shows the original center piece with different infill settings, these settings would have made the pliers harder to squeeze." %}
