@@ -3,9 +3,9 @@ main:
   - title: "Portfolio"
     url: /portfolio/
   - title: "About"
-    url: /_pages/about
+    url: /about/
     - title: "Certifications"
-    url: /_pages/certifications
+    url: /certifications/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
