@@ -3,8 +3,12 @@ main:
   - title: "Portfolio"
     url: /portfolio/
   - title: "About"
-    url: /about/
-  - title: "Certifications"
+    url: /pages/about/
+  - title: "VADL"
+    url: /certifications/
+  - title: "Additive Projects"
+    url: /certifications/
+    - title: "Subtractive Projects"
     url: /certifications/
   # - title: "Sample Posts"
   #   url: /year-archive/
