@@ -17,6 +17,6 @@ In order for the pliers to work, some variables need to be changed within the pr
 # CAD Model
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b6028115441302eab5825b7?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
-# Final Product 
+# Final Product Photo Gallery  
 
 {% include gallery caption="Final Product made in Vanderbilt Digital Fabrication Labratory using student made Voron printers." %}
