@@ -20,7 +20,7 @@ In order for the pliers to work, some variables need to be changed within the pr
 # CAD Model
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b6028115441302eab5825b7?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
-![Pliers opening/closing](/assets/img/IMG_2523-ezgif.com-video-to-gif-converter.mo)
+<img src="{{ '/assets/img/IMG_2523-ezgif.com-video-to-gif-converter.mo' | relative_url }}" alt="Pliers opening/closing" width="640">
 
 
 # Final Product Photo Gallery  
