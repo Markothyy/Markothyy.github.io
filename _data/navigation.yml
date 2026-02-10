@@ -8,7 +8,7 @@ main:
     url: /VanderbiltAerospaceDesignLabWork/
   - title: "Additive Projects"
     url: /AdditiveExperience/
-    - title: "Subtractive Projects"
+  - title: "Subtractive Projects"
     url: /SubtractiveExperience/
   # - title: "Sample Posts"
   #   url: /year-archive/
