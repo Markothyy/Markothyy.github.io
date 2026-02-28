@@ -1,7 +1,9 @@
 ---
 
-title: "About Mark Sedek"
-
+title: "About"
+layout: single
+permalink: /about/
+author_profile: true
 ---
 
 ## Education
