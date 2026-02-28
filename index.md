@@ -16,7 +16,7 @@ feature_row:
     title: "Vanderbilt Aerospace Design Lab"
     excerpt: "Vehicle airframe development, and full-scale rocket manufacturing"
   - image_path: assets/img/drone.jpg
-    alt: "placeholder image 2"
+    alt: "Generatively designed lightweight drone"
     title: "Generative Design Experience"
     excerpt: "Develop a lightweight drone with Autodesk Fusion 360 Generative Design"
   - image_path: assets/img/Bettersyringpump.png
