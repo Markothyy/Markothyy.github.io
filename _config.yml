@@ -16,7 +16,7 @@ title_separator          : "-"
 subtitle                 : "Aspiring Aerospace Engineer"
 name                     : &name "Mark Sedek" # &name is a YAML anchor which can be *referenced later
 description              : &description "Mechanical Engineering Major at Vanderbilt University "
-url                      : https://Markothyy.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://markothyy.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : 
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -189,7 +189,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
