@@ -40,3 +40,11 @@ Resin printing was chosen over other manufacturing techniques for several reason
 To handle a wider range of particle sizes, the design could be modified to include multiple outlet channels of varying lengths, each corresponding to a different size range. More channels would allow finer separation between size groups that are closer together. Flow separators could also be incorporated at the point where the broad section meets the outlets, physically dividing the streams before they enter their respective channels and reducing the chance of particles crossing into the wrong outlet.
 
 The lower limit on particle size is set by two main factors. First, particles smaller than the surface roughness of the channels cannot follow predictable streamlines and will instead interact with the channel walls. Second, the minimum feature size of the printer limits how small the pinch channel can be made, which directly limits how small the particles can be while still achieving separation.
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen>
+</iframe>
