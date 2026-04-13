@@ -8,8 +8,6 @@ header:
 
 # Introduction
 
-# Introduction
-
 Pinch flow fractionation (PFF) is a microfluidic sorting technique that separates particles by size using only fluid flow. Particles are squeezed against a wall in a narrow pinched channel, where larger particles are physically blocked from getting as close to the wall as smaller ones due to their radius. When the channel suddenly expands, this small positional difference is amplified across the broad section, directing each particle size into a separate outlet. For more detailed information on the underlying principles of pinch flow fractionation, see <a href="/assets/img/Asger.pdf">Primary source PDF</a>
 
 Resin printed molds are coated with parylene prior to casting PDMS because uncured resin inhibits the PDMS from curing properly, and parylene acts as a thin barrier layer between the two materials preventing interference.
@@ -52,7 +50,7 @@ The most important steps for creating a microfluidic device with resin printing 
 ![Picture of the casted device](/assets/img/IMG_3050.JPG)
 
 
-![Plasma treating process](/assets/img/Plasma Treating Image (2).jpg)
+![Plasma treating process](/assets/img/Plasma-Treating-Image (2).jpg)
 
 # Discussion
 
