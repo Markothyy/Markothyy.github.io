@@ -60,6 +60,12 @@ To handle a wider range of particle sizes, the design could be modified to inclu
 
 The lower limit on particle size is set by two main factors. First, particles smaller than the surface roughness of the channels cannot follow predictable streamlines and will instead interact with the channel walls. Second, the minimum feature size of the printer limits how small the pinch channel can be made, which directly limits how small the particles can be while still achieving separation.
 
+# Testing Results
+
+Experimental testing demonstrated partial particle separation, indicating that the device was able to perform pinch flow fractionation to some degree. However, the separation quality was limited by flaws in the final channel geometry. The broad section did not provide sufficient expansion space for the streams to separate as cleanly as intended before reaching the outlet boundaries.
+
+Testing also revealed that the inlet design contributed to this reduced performance. Removing the inlet walls appeared to make the incoming flow less controlled as it entered the pinch region. Additionally, the curved left edge of the broad section produced visible recirculation zones and vortices in the video, which disturbed the streamlines and likely reduced the effectiveness of particle sorting.
+
 # Testing
 
 ![Picture of testing setup](/assets/img/IMG_3049.JPG)
