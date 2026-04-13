@@ -32,7 +32,7 @@ Key dimensions of the device are as follows:
   **Large particle outlet channel length:** 19.443 mm
   **Buffer outlet channel length:** 21.733 mm
 
-![Sketch of critical channel dimensions](/assets/img/PLACEHOLDER_SKETCH.png)
+![Sketch of device dimensions](/assets/img/Dimensionscorrected.png)
 
 During the design process, an issue was identified with the broad section because it was not tall enough for the device to function correctly. This was corrected in revision. Additionally, flat walls that were initially spacing the two inlet channels were removed to allow the flow streams to converge more naturally into the pinched section.
 
