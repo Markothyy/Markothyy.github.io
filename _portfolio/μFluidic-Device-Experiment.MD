@@ -1,10 +1,10 @@
-   
+---   
 title: "Pinch Flow Fractionation Microfluidic Device"
 excerpt: "A resin printed microfluidic device designed to sort particles by size using pinch flow fractionation"
 header:
   image: /assets/img/IMG_3049.JPG
   teaser: /assets/img/IMG_3049.JPG
-   
+ ---  
 
 # Introduction
 
