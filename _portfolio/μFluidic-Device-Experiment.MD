@@ -62,9 +62,9 @@ The lower limit on particle size is set by two main factors. First, particles sm
 
 # Testing Results
 
-Experimental testing demonstrated partial particle separation, indicating that the device was able to perform pinch flow fractionation to some degree. However, the separation quality was limited by flaws in the final channel geometry. The broad section did not provide sufficient expansion space for the streams to separate as cleanly as intended before reaching the outlet boundaries.
+Testing demonstrated partial particle separation, indicating that the device was able to perform pinch flow fractionation to some degree. However, the separation quality was limited by flaws in the final models design. For example. the broad section did not provide sufficient space for the particles to separate as cleanly as intended before reaching the outlet boundaries. Majority of particles went into the top channel. 
 
-Testing also revealed that the inlet design contributed to this reduced performance. Removing the inlet walls appeared to make the incoming flow less controlled as it entered the pinch region. Additionally, the curved left edge of the broad section produced visible recirculation zones and vortices in the video, which disturbed the streamlines and likely reduced the effectiveness of particle sorting.
+Testing also revealed that the inlet design contributed to this reduced performance. The inlet walls appeared to make the incoming flow less controlled as it entered the pinch region. Additionally, the curved left edge of the broad section produced vortices as shown in the video, which disturbed the streamlines (the path of the particles) and likely reduced the effectiveness of particle sorting.
 
 # Testing
 
