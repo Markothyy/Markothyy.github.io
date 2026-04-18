@@ -1,6 +1,6 @@
 ---
-title: "3D Printed Pickleball Paddle"
-excerpt: "A multi-part pickleball paddle built with Carbon Fiber ABS, an Onyx handle core, and TPU grip and edge protection features."
+title: "Generative Designed Skateboard Truck"
+excerpt: "Built for real skater dudes"
 header:
   image: /assets/img/pickleball-paddle-cover.jpg
   teaser: /assets/img/pickleball-paddle-cover.jpg
