@@ -2,10 +2,10 @@
 title: "Stewart Platform"
 excerpt: "A DIY balancing device using servos and an Arduino Mega."
 header:
-  image: /assets/img/Bettersyringpump.png
-  teaser: /assets/img/rendersyringe.png
+  image: /assets/img/Stewplat.jpg
+  teaser: /assets/img/Stewplat.jpg
 gallery:
-  - image_path: assets/img/wiresimpli.png
+  - image_path: /assets/img/Stewplat.jpg
    
 ---
 
