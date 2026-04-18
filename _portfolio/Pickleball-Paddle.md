@@ -18,27 +18,21 @@ gallery:
 
 ## Overview
 
-I designed this pickleball paddle as a multi-material, multi-part build that focused on durability, grip, and overall usability. Rather than making the entire paddle from one material, I split the design into functional sections so each part could better serve its purpose. The paddle body was made from **Carbon Fiber ABS**, the inner handle was made from **Onyx filament**, the outer handle was made from **TPU**, and the interchangeable edge guard was also made from **TPU**.
-
-That material split let me approach the project more like a real product. The stiffer materials were used where structure and strength mattered most, while the more flexible material was used where comfort and impact protection mattered more. I wanted the final design to feel intentional not just in shape, but in how each part functioned once assembled.
+I designed this pickleball paddle as a multi-material, multi-part build that focused on strength, and overall usability. Rather than making the entire paddle from one material, I split the design into sections so each part could better serve its purpose. The paddle body was made from Carbon Fiber ABS, the inner handle was made from Onyx filament, the outer handle was made from TPU, and the interchangeable edge guard was also made from TPU. I chose each material based on its use and how much force it will take. For instance the inner handle will take the majoirty of the force (bending and its a weak point) so I made it out of the strongest filiment available to me. 
 
 ## Paddle Body
 
-The main paddle body was made from **Carbon Fiber ABS**. I chose this material because I wanted the face of the paddle to feel rigid and structural while still being lightweight enough to keep the paddle usable. Since this is the part that takes the impact when striking the ball, it needed to hold its shape well and provide a solid core for the rest of the design.
-
-I also kept the paddle face relatively clean and smooth so the design stayed simple and functional. The goal was not to make it visually busy, but to make it feel like a real paddle body that could support repeated use. Using Carbon Fiber ABS for this section gave the build a stronger and more engineered feel than if the entire paddle had been made from a softer or less structural material.
+The main paddle body was made from Carbon Fiber ABS. I chose this material because I wanted the face of the paddle to feel rigid and structural while still being lightweight enough to keep the paddle usable. This lightweight was also done through decreacing the infill percentage. Since this is the part that takes the impact when striking the ball, it needed to hold its shape well and provide a solid core for the rest of the design. The paddle body is connected using heatset inserts connected to the inner handle. 
 
 ## Handle Design
 
-The handle was designed in two layers: an **inner handle made from Onyx filament** and an **outer handle made from TPU**. I liked this setup because it separated structure from grip. The Onyx inner section gave the handle a rigid internal core, which made it better suited to support loads and maintain shape during use. That was especially important since the handle is where forces from the user’s hand transfer into the paddle.
+The handle was designed in two parts, an inner handle made from Onyx filament and an outer handle made from TPU. I made it like this since I knew the handle would be taking the most force during games and will likely be the first area to fail. Thus, I made it into two parts with the iner handle having a friction fit with the outer handle. Also why I chose onyx for the most rigid material able to withstand heavy rotational forces etc. 
 
-Around that rigid core, I added a TPU outer handle. This gave the grip a softer and more comfortable feel in the hand and improved traction compared to a fully rigid handle. Instead of feeling hard and slippery, the grip had some compliance to it, which made the paddle feel more intentional and more comfortable to hold. Combining a rigid internal handle with a softer outer layer made the handle much more functional than using only one material.
+Around that rigid core, I added a TPU outer handle. This gave the grip a softer and more comfortable feel in the hand and improved traction compared to a fully rigid handle.
 
 ## Interchangeable Edge Guard
 
-The interchangeable edge guard was made from **TPU**. I wanted the edge guard to act as a protective wear component, so using a more flexible material made sense. Since the perimeter of the paddle is one of the areas most likely to contact the ground, the guard needed to absorb minor impacts and scrapes without damaging the main paddle body.
-
-Making that part out of TPU also helped reinforce the idea that it was a replaceable protective piece rather than part of the structural core. If it gets worn down or damaged, it can be replaced without remaking the whole paddle. I liked that because it made the design more modular and more realistic. The Carbon Fiber ABS body stays protected, while the TPU edge guard takes the abuse it was designed for.
+The interchangeable edge guard was made from TPU. I wanted the edge guard to act as a protective wear component, so using a more flexible material made sense. Since the perimeter of the paddle is one of the areas most likely to contact the ground, the guard needed to absorb minor impacts and scrapes without damaging the main paddle body.
 
 ## Weight and Balance
 
