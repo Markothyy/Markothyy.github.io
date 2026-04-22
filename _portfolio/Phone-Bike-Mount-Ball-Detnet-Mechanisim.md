@@ -29,7 +29,7 @@ Assembly
 To construct my phone mount it requires minimal screws and is held together by the pressure made from the spring and ball bearing. First, the clamps which hold the phone tight are conencted using an elastic spring. This spring is connected to these jaws by a small tooth made on the surface facing the inside of the base of the phone mount. the detent system then works with what we will call the gear on the back of the phone with the divits of where the ball bearing and spring would be on top. This bottom most piece is also the piece that connects to the bike. 
 
 ## Top Down Modeling Approach
-
+In top down modeling, its an approach where an entire assembly can be made without importing each part, unlike how the workflow works in SOLIDWORKS. This allows for faster and more accuurate dimensioning and modeling since the time it takes to go into one component of an assembly, edit it, going back to the assembly, and updating it is saved. In my case this was through modeling and projecting geometries to make other bodies to be turned into components within my assembly. This approach assisted me in modeling and offsetting my dovetail clamps at just the right amount for the mount to work. This approach also helped with interfacing components with other components namely the ball dentent system.  
 
 ## Design Rationale
 
