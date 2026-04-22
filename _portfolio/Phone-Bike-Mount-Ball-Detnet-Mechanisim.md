@@ -40,26 +40,32 @@ Parts were all printed using PLA, which upon testing proves it can hold up a pho
 # CAD Model
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811be0c1d884ddf56cb?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
+
 # Real-Life Photos
 
 
 # Rotation GIF
 
-
+![Phone holder rotating between portrait and landscape](/assets/img/phone-holder/rotation.gif)
 
 # Fusion Render
 
+![Fusion rendering of the phone holder with the phone installed](/assets/img/phone-holder/fusion-render.png)
 
 # Internal Rotation Mechanism Cross-Section
 
+![Cross-section of the internal rotation mechanism](/assets/img/phone-holder/cross-section.jpg)
 
 # Individual Top-Down Components
 
 ## Component 1
+![Top-down component 1](/assets/img/phone-holder/component-1.png)
 
 ## Component 2
-
+![Top-down component 2](/assets/img/phone-holder/component-2.png)
 
 ## Component 3
+![Top-down component 3](/assets/img/phone-holder/component-3.png)
 
 ## Component 4
+![Top-down component 4](/assets/img/phone-holder/component-4.png)
