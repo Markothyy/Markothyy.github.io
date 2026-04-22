@@ -46,26 +46,26 @@ Parts were all printed using PLA, which upon testing proves it can hold up a pho
 
 # Rotation GIF
 
-![Phone holder rotating between portrait and landscape](/assets/img/phone-holder/rotation.gif)
+![Phone holder rotating between portrait and landscape](/assets/img/rotation.gif)
 
 # Fusion Render
 
-![Fusion rendering of the phone holder with the phone installed](/assets/img/phone-holder/fusion-render.png)
+![Fusion rendering of the phone holder with the phone installed](/assets/img/fusion-render.png)
 
 # Internal Rotation Mechanism Cross-Section
 
-![Cross-section of the internal rotation mechanism](/assets/img/phone-holder/cross-section.jpg)
+![Cross-section of the internal rotation mechanism](/assets/img/cross-section.jpg)
 
 # Individual Top-Down Components
 
 ## Component 1
-![Top-down component 1](/assets/img/phone-holder/component-1.png)
+![Top-down component 1](/assets/img/component-1.png)
 
 ## Component 2
-![Top-down component 2](/assets/img/phone-holder/component-2.png)
+![Top-down component 2](/assets/img/component-2.png)
 
 ## Component 3
-![Top-down component 3](/assets/img/phone-holder/component-3.png)
+![Top-down component 3](/assets/img/component-3.png)
 
 ## Component 4
-![Top-down component 4](/assets/img/phone-holder/component-4.png)
+![Top-down component 4](/assets/img/component-4.png)
