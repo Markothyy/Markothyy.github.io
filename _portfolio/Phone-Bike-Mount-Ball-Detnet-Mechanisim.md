@@ -26,11 +26,11 @@ Because the parts were filament printed, I had to make dimensional adjustments f
 The printing process used for this project was PLA filament printing with a high infill of 50%. I chose this process because it allowed quick iteration, was accessible for prototyping, and was suitable for producing functional mechanical parts.
 
 Assembly 
-
+To construct my phone mount it requires minimal screws and is held together by the pressure made from the spring and ball bearing. First, the clamps which hold the phone tight are conencted using an elastic spring. This spring is connected to these jaws by a small tooth made on the surface facing the inside of the base of the phone mount. the detent system then works with what we will call the gear on the back of the phone with the divits of where the ball bearing and spring would be on top. This bottom most piece is also the piece that connects to the bike. 
 
 # Design Summary
 
-## Top-Down Modeling Approach
+## Top Down Modeling Approach
 
 
 ## Design Rationale
