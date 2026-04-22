@@ -31,10 +31,9 @@ To construct my phone mount it requires minimal screws and is held together by t
 ## Top Down Modeling Approach
 In top down modeling, its an approach where an entire assembly can be made without importing each part, unlike how the workflow works in SOLIDWORKS. This allows for faster and more accuurate dimensioning and modeling since the time it takes to go into one component of an assembly, edit it, going back to the assembly, and updating it is saved. In my case this was through modeling and projecting geometries to make other bodies to be turned into components within my assembly. This approach assisted me in modeling and offsetting my dovetail clamps at just the right amount for the mount to work. This approach also helped with interfacing components with other components namely the ball dentent system.  
 
-## Design Rationale
-
-
 ## Detent Mechanism
+My rational for my phone holder was to use a ball detent system to allow the device to rotate from portriat to landscape easily and securely. 
+
 
 
 ## Printing / Tolerance Changes
