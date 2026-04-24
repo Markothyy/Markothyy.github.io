@@ -40,7 +40,8 @@ Parts were all printed using PLA, which upon testing proves it can hold up a pho
 
 
 # Real-Life Photos
-
+![Real Life Photo1](/assets/img/RealL1.jpg)
+![Real Life Photo2](/assets/img/RealL2.jpg)
 
 # Rotation GIF
 
