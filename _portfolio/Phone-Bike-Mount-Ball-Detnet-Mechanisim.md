@@ -2,13 +2,8 @@
 title: "Top-Down Bike Phone Mount/Holder"
 excerpt: "A top-down modeled, filament-printed phone holder designed for secure mounting, easy phone insertion, and rotation between portrait and landscape orientations."
 header:
-  image: /assets/img/main-photo.jpg
-  teaser: /assets/img/main-photo.jpg
-gallery:
-  - image_path: /assets/img/phone-holder/in-use-1.jpg
-    alt: "Printed phone holder mounted on supplied handlebar"
-  - image_path: /assets/img/phone-holder/in-use-3.jpg
-    alt: "Phone holder with phone installed"
+  image: /assets/img/RealL2.jpg
+  teaser: /assets/img/RealL2.jpg
 ---
 
 # Project Overview
