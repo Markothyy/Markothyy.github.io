@@ -44,7 +44,7 @@ Parts were all printed using PLA, which upon testing proves it can hold up a pho
 # Rotation GIF
 
 <video width="700" autoplay loop muted playsinline>
-  <source src="{{ '/assets/img/Phonemountgif.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/img/Phonemountgif-ezgif.com-video-to-gif-converter.mp4' | relative_url }}" type="video/mp4">
 </video>
 # Fusion Render
 
