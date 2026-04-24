@@ -4,6 +4,9 @@ excerpt: "A top-down modeled, filament-printed phone holder designed for secure 
 header:
   image: /assets/img/RealL2.JPG
   teaser: /assets/img/RealL2.JPG
+gallery:
+  - image_path: /assets/img/RealL2.JPG
+  - image_path: /assets/img/RealL1.JPG
 ---
 
 # Project Overview
