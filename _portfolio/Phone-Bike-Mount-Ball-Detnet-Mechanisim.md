@@ -43,8 +43,9 @@ Parts were all printed using PLA, which upon testing proves it can hold up a pho
 
 # Rotation GIF
 
-![Phone holder rotating between portrait and landscape](/assets/img/rotation.gif)
-
+<video width="700" autoplay loop muted playsinline>
+  <source src="{{ '/assets/img/Phonemountgif.mp4' | relative_url }}" type="video/mp4">
+</video>
 # Fusion Render
 
 ![Fusion rendering of the phone holder with the phone installed](/assets/img/fusion-render.png)
