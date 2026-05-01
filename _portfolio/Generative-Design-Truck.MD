@@ -156,9 +156,3 @@ Generative design is useful because it can quickly create efficient structures t
 For this project, generative design was most useful for exploring how the truck hanger and motor mount could become one integrated structure. The final assembly helped connect the digital design process to a realistic mechanical layout by showing whether the truck, motor, belt, pulley, and wheel system could fit and move as intended.
 
 ---
-
-## Reflection
-
-This project helped me better understand how generative design depends on strong engineering setup before the solver is even run. The final result was not just about creating an organic-looking part, but about preserving the correct interfaces, choosing meaningful loads, checking clearances, and validating the design within the full assembly.
-
-The most valuable part of the project was seeing how CAD decisions, loading assumptions, material selection, and assembly constraints all affect the final design.
