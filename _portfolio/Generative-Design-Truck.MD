@@ -143,7 +143,7 @@ The comparison showed that material selection directly affects the final generat
 
 Generative design is useful because it can create efficient structures that follow the main load paths of a part. Instead of manually sketching every support member, I defined the preserved geometry, obstacle regions, constraints, materials, and load cases, then allowed the solver to generate a structure around those requirements.
 
-This is especially valuable in aerospace and automotive applications, where reducing mass can improve efficiency, performance, and energy usage. One commercial example of this is [add a specific commercial generative design example here], where generative design was used to reduce the number of separate components in an assembly and create a lighter consolidated part.
+This is especially valuable in aerospace and automotive applications, where reducing mass can improve efficiency, performance, and energy usage. One commercial example of this is 
 
 The most important part of the generative design process was applying reasonable load cases. The software can only optimize around the information it is given, so unrealistic loads can lead to unrealistic results. If a major force is missing, the final design may remove material from an area that actually needs strength. If the applied forces are too large or placed incorrectly, the design may become unnecessarily heavy. For this project, I selected loads based on how a skateboard truck is actually used: vertical rider loading, lateral turning, motor belt tension, braking, and impact loading.
 
