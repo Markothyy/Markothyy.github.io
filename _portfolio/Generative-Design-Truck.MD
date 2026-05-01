@@ -89,13 +89,15 @@ The loading conditions were chosen to represent realistic forces that the truck 
 
 | Force Name | Magnitude | Location Applied | Short Rationale |
 |---|---:|---|---|
-| Rider vertical load | [Insert value] N | Axle ends | Represents the rider’s weight transferred through the wheels into the hanger |
-| Lateral turning load | [Insert value] N | Axle / wheel direction | Represents side loading during carving or turning |
-| Motor belt force | [Insert value] N | Motor mount / pulley direction | Represents the belt tension created by the motor driving the wheel |
-| Braking load | [Insert value] N | Axle / wheel direction | Represents longitudinal force during deceleration |
-| Impact load | [Insert value] N | Axle ends | Represents a bump, curb, or sudden road impact |
-
-The loads were applied to regions where the real truck would transfer force during use. The goal was not to overload the model artificially, but to give the solver enough realistic information to generate meaningful structural load paths.
+| Reaction Load from Ground | 50 N | Preserved Bushing Geometry | Mainly just for structure, reaction of ground to the truck for sturdiness |
+| Motor Weight Moment | 10 Nm | Preserved Motor Mount | Represents the weight/torsion the motor mount plate experiences when the motor is attached |
+| Motor belt force | 9 N | Motor mount / pulley direction | Represents the belt tension created by the motor driving the wheel |
+| Wheel bearing reaction load | 400 N | Bearing contact surface at wheel/axle interface | Represents distributed wheel loads transferred through the bearing into the axle. |
+| Weight of the Rider | 100 N | Tip of hanger, part that attaches to the skateboard | Represents the weight of the rider on the center part of the hanger. |
+| Pressure by Motor to Motor Mounting Plate | 5 N | Motor contact surface at Motor Mount | Represents normal force from the motor to motor mounting plate. |
+| Reaction by center part to Hanger from bushing & skateboard force | 50 N | Backside of center part on hanger | Represents reaction force from the center hanger piece to the skateboard. |
+| Bearing load on Axles | 100 N | Preserved Axles | Represents wheel forces transferred into the axle through the bearing. |
+| Remote Moment | 9 Nm | In between Mounting plate and Axles | Represents the rotatting tension from the belt as the skateboard moves. The force felt by the axle and mounting plate as the belt turns. |
 
 ---
 
