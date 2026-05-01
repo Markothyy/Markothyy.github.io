@@ -2,8 +2,8 @@
 title: "Generative Design Skateboard Truck"
 excerpt: "A generatively designed skateboard truck hanger"
 header:
-  image: /assets/img/IMG_3349.JPG
-  teaser: /assets/img/IMG_3341.JPG
+  image: /assets/img/IMG_3341.JPG
+  teaser: /assets/img/IMG_3349.JPG
 gallery:
   - image_path: /assets/img/IMG_3341.JPG
   - image_path: /assets/img/IMG_3342.JPG
