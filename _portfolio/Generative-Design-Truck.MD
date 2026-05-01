@@ -15,9 +15,7 @@ gallery:
 
 ## Project Overview
 
-This project used generative design to create a lightweight skateboard truck hanger with an integrated brushless DC motor mount. The design goal was to reduce mass while preserving the critical functional interfaces of the truck, including the axle bearing seats, pivot cup interface, kingpin clearance region, and motor mounting features.
-
-The final design combines what would normally be separate truck and motor mount components into one optimized structure. The model was assembled with the longboard, motor, belt, pulley, and wheel system to check overall fit, clearance, and mechanical layout.
+This project used generative design to create a lightweight skateboard truck hanger with an integrated brushless DC motor mount. The design goal was to reduce mass while preserving the critical functional interfaces of the truck, including the axle bearing seats, pivot cup interface, kingpin clearance region, and motor mounting features. The final design combines what would normally be separate truck and motor mount components into one optimized structure. The model was assembled with the longboard, motor, belt, pulley, and wheel system to check overall fit, clearance, and mechanical layout.
 
 ---
 
@@ -133,11 +131,7 @@ The motor and wheel system was also checked to confirm that the pulley and belt 
 
 ## Material Comparison
 
-The aluminum generative design result provided a lightweight structure that is closer to the material behavior of traditional skateboard trucks. AlSi10Mg aluminum is useful for reducing mass while still maintaining enough stiffness and strength for this type of application.
-
-A stronger material such as 17-4 PH stainless steel would likely allow thinner structural members because of its higher strength and stiffness, but the higher density could also increase the final mass. This means that the lighter aluminum option may be better for weight-sensitive applications, while stainless steel may be more useful when durability, stiffness, or compact high-strength geometry is the priority.
-
-The comparison showed that material selection directly affects the final generative design geometry. A lower-density aluminum design tends to use larger but lighter load paths, while a denser and stronger steel design can use more compact members but may still end up heavier overall.
+The aluminum generative design result provided a lightweight structure that is closer to the material behavior of traditional skateboard trucks. AlSi10Mg aluminum is useful for reducing mass while still maintaining enough stiffness and strength for this type of application. A stronger material such as 17-4 PH stainless steel would likely allow thinner structural members because of its higher strength and stiffness, but the higher density could also increase the final mass. This means that the lighter aluminum option may be better for weight-sensitive applications, while stainless steel may be more useful when durability, stiffness, or compact high-strength geometry is the priority. The comparison showed that material selection directly affects the final generative design geometry. A lower-density aluminum design tends to use larger but lighter load paths, while a denser and stronger steel design can use more compact members but may still end up heavier overall.
 
 ---
 
