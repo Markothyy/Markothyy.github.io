@@ -1,5 +1,5 @@
 ---
-title: "Generative Designed Skateboard Truck"
+title: "Rocket Fin Control System"
 excerpt: "Built for real skater dudes"
 header:
   image: /assets/img/pickleball-paddle-cover.jpg
