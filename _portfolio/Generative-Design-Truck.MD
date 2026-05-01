@@ -1,8 +1,8 @@
 ---
-title: "Generative Design Skateboard Truck Hanger with Integrated Motor Mount"
+title: "Generative Design Skateboard Truck"
 excerpt: "A generatively designed skateboard truck hanger"
 header:
-  image: /assets/img/IMG_3341.JPG
+  image: /assets/img/IMG_3349.JPG
   teaser: /assets/img/IMG_3341.JPG
 gallery:
   - image_path: /assets/img/IMG_3341.JPG
