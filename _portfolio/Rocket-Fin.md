@@ -136,23 +136,23 @@ The Arduino uses both sensor measurements to estimate pitch and roll.
 
 The accelerometer estimates roll and pitch using gravity:
 
-$$
-roll_{accel} = \tan^{-1}\left(\frac{a_y}{a_z}\right)
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>roll<sub>accel</sub> = atan2(a<sub>y</sub>, a<sub>z</sub>)</strong>
+</div>
 
-$$
-pitch_{accel} = \tan^{-1}\left(\frac{-a_x}{\sqrt{a_y^2 + a_z^2}}\right)
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>pitch<sub>accel</sub> = atan2(-a<sub>x</sub>, √(a<sub>y</sub><sup>2</sup> + a<sub>z</sub><sup>2</sup>))</strong>
+</div>
 
 Where:
 
 | Variable | Meaning |
 |---|---|
-| $a_x$ | Acceleration measured along the x-axis |
-| $a_y$ | Acceleration measured along the y-axis |
-| $a_z$ | Acceleration measured along the z-axis |
-| $roll_{accel}$ | Roll estimate from the accelerometer |
-| $pitch_{accel}$ | Pitch estimate from the accelerometer |
+| a<sub>x</sub> | Acceleration measured along the x-axis |
+| a<sub>y</sub> | Acceleration measured along the y-axis |
+| a<sub>z</sub> | Acceleration measured along the z-axis |
+| roll<sub>accel</sub> | Roll estimate from the accelerometer |
+| pitch<sub>accel</sub> | Pitch estimate from the accelerometer |
 
 The accelerometer is useful because it can sense the direction of gravity. However, it can become noisy when the model is shaken or moved quickly.
 
@@ -160,31 +160,31 @@ The accelerometer is useful because it can sense the direction of gravity. Howev
 
 The gyroscope measures angular velocity. To estimate angle from the gyroscope, the code uses:
 
-$$
-new\ angle = old\ angle + angular\ velocity \cdot \Delta t
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>new angle = old angle + angular velocity × Δt</strong>
+</div>
 
 For roll:
 
-$$
-roll_{gyro} = roll + g_x \Delta t
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>roll<sub>gyro</sub> = roll + g<sub>x</sub>Δt</strong>
+</div>
 
 For pitch:
 
-$$
-pitch_{gyro} = pitch + g_y \Delta t
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>pitch<sub>gyro</sub> = pitch + g<sub>y</sub>Δt</strong>
+</div>
 
 Where:
 
 | Variable | Meaning |
 |---|---|
-| $g_x$ | Gyroscope rotation rate used for roll |
-| $g_y$ | Gyroscope rotation rate used for pitch |
-| $\Delta t$ | Time between readings |
-| $roll_{gyro}$ | Roll estimate predicted from the gyroscope |
-| $pitch_{gyro}$ | Pitch estimate predicted from the gyroscope |
+| g<sub>x</sub> | Gyroscope rotation rate used for roll |
+| g<sub>y</sub> | Gyroscope rotation rate used for pitch |
+| Δt | Time between readings |
+| roll<sub>gyro</sub> | Roll estimate predicted from the gyroscope |
+| pitch<sub>gyro</sub> | Pitch estimate predicted from the gyroscope |
 
 The gyroscope is good for smooth short-term motion. The problem is that small measurement errors can build up over time, which causes drift.
 
@@ -194,19 +194,19 @@ The complementary filter combines the accelerometer and gyroscope estimates.
 
 The filter equations used in the code are:
 
-$$
-roll = \alpha(roll + g_x \Delta t) + (1 - \alpha)roll_{accel}
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>roll = α(roll + g<sub>x</sub>Δt) + (1 - α)roll<sub>accel</sub></strong>
+</div>
 
-$$
-pitch = \alpha(pitch + g_y \Delta t) + (1 - \alpha)pitch_{accel}
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>pitch = α(pitch + g<sub>y</sub>Δt) + (1 - α)pitch<sub>accel</sub></strong>
+</div>
 
 In the final code:
 
-$$
-\alpha = 0.97
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>α = 0.97</strong>
+</div>
 
 This means the filter mostly follows the gyroscope estimate, while the accelerometer gives a smaller correction.
 
@@ -255,13 +255,13 @@ If the measured angle is very small, treat it as zero
 
 The code also smooths the pitch and roll command:
 
-$$
-currentPitch = 0.8(currentPitch) + 0.2(measuredPitch)
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>currentPitch = 0.8(currentPitch) + 0.2(measuredPitch)</strong>
+</div>
 
-$$
-currentRoll = 0.8(currentRoll) + 0.2(measuredRoll)
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>currentRoll = 0.8(currentRoll) + 0.2(measuredRoll)</strong>
+</div>
 
 This prevents sudden jumps in fin position and makes the system look more controlled.
 
@@ -271,45 +271,45 @@ The fin control is proportional. This means a larger tilt causes a larger fin mo
 
 The gain value used in the code is:
 
-$$
-K = 1.8
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>K = 1.8</strong>
+</div>
 
 The gain controls how strongly the fins respond.
 
 For example, if the model tilts by 10 degrees:
 
-$$
-fin\ correction = 1.8 \times 10 = 18^\circ
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>fin correction = 1.8 × 10 = 18°</strong>
+</div>
 
 The servos are centered at 90 degrees. The correction is added or subtracted from 90 degrees.
 
 The equations are:
 
-$$
-top\ fin = 90^\circ + K\theta
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>top fin = 90° + Kθ</strong>
+</div>
 
-$$
-bottom\ fin = 90^\circ - K\theta
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>bottom fin = 90° - Kθ</strong>
+</div>
 
-$$
-right\ fin = 90^\circ + K\phi
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>right fin = 90° + Kφ</strong>
+</div>
 
-$$
-left\ fin = 90^\circ - K\phi
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>left fin = 90° - Kφ</strong>
+</div>
 
 Where:
 
 | Symbol | Meaning |
 |---|---|
-| $K$ | Gain |
-| $\theta$ | Pitch angle |
-| $\phi$ | Roll angle |
+| K | Gain |
+| θ | Pitch angle |
+| φ | Roll angle |
 
 The top and bottom fins respond to pitch. The right and left fins respond to roll. Opposite fins move in opposite directions so they act as correcting pairs.
 
@@ -367,33 +367,33 @@ In a real rocket, the fins do not simply move for visual effect. They change the
 
 A simplified aerodynamic relationship is:
 
-$$
-F = \frac{1}{2}\rho V^2 A C_L
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>F = 1/2 ρV<sup>2</sup>AC<sub>L</sub></strong>
+</div>
 
 Where:
 
 | Variable | Meaning |
 |---|---|
-| $F$ | Aerodynamic force on the fin |
-| $\rho$ | Air density |
-| $V$ | Airspeed |
-| $A$ | Fin area |
-| $C_L$ | Lift coefficient |
+| F | Aerodynamic force on the fin |
+| ρ | Air density |
+| V | Airspeed |
+| A | Fin area |
+| C<sub>L</sub> | Lift coefficient |
 
 The moment created by the fin force can be estimated as:
 
-$$
-M = FL
-$$
+<div style="font-size:1.15em; margin: 1em 0;">
+<strong>M = FL</strong>
+</div>
 
 Where:
 
 | Variable | Meaning |
 |---|---|
-| $M$ | Correcting moment |
-| $F$ | Force from the fin |
-| $L$ | Distance from the center of mass to the fin center |
+| M | Correcting moment |
+| F | Force from the fin |
+| L | Distance from the center of mass to the fin center |
 
 This project does not measure real aerodynamic force because it is a tabletop model with no airflow. Instead, it demonstrates the mechatronics part of the control process:
 
