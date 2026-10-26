@@ -8,6 +8,14 @@ author_profile: true
 
 I'm a design engineer with the Vanderbilt Aerospace Design Laboratory (VADL), Vanderbilt's NASA University Student Launch team, which designs, builds, and flies a reusable high-power rocket and a novel payload each year. I joined in August 2025 and was part of the 2025–2026 team that placed 2nd of 33 nationally and won the Payload Design Award.
 
+<div class="media-frame">
+  <video controls muted playsinline preload="metadata" poster="{{ '/assets/img/vadl/vadl-reel-poster.jpg' | relative_url }}">
+    <source src="{{ '/assets/video/vadl-reel.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support embedded video.
+  </video>
+</div>
+<p class="media-caption">2025–2026 vehicle and the Stop Drop &amp; Roll payload. Video: Vanderbilt Aerospace Design Laboratory.</p>
+
 ## Vibration Test Benches
 
 My main focus this year is a pair of scaled vibration test benches for checking that flight hardware (PCBs, connections, and assemblies) still works under vibration. A commercial shaker table that can reproduce rocket flight conditions is expensive and large, so I designed two smaller benches built from off-the-shelf components:
@@ -20,6 +28,11 @@ I wrote the Design Concept Review for the benches. CAD is complete and the hardw
 ## Avionics Bays
 
 I designed avionics bays for the subscale and full-scale vehicles. Each bay holds the altimeters, batteries, and rotary arming switches on a 3D-printed PETG sled, which mounts to the CNC-machined bulkheads with threaded rods anchored to the aft plate.
+
+<figure class="cad-render">
+  <img src="{{ '/assets/img/vadl/avionics-bay-cad.png' | relative_url }}" alt="SOLIDWORKS model of the avionics bay assembly">
+</figure>
+<p class="media-caption">SOLIDWORKS model of the avionics bay assembly.</p>
 
 ## Payload Gimbal Concepts
 

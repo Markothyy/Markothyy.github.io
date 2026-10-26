@@ -1,5 +1,5 @@
 ---
-title: "Mark's Portfolio"
+title: "Mark Sedek"
 layout: splash
 header:
   overlay_color: "#000"
@@ -9,7 +9,7 @@ header:
   actions:
     - label: "My Projects"
       url: "/portfolio/"
-excerpt: "Mark Sedek is an engineering student with a passion for aerospace engineering, aiming for the defense/manufacturing industry. Experience with computer aided design and manufacturing tools, as well as hands-on skills. Mark is interested in roles in engineering such as test, system, and build engineering. "
+excerpt: "Mechanical engineering student at Vanderbilt University (Class of 2027) designing flight hardware, test equipment, and production tooling for aerospace and defense. Interested in test, systems, and build engineering roles."
 feature_row:
   - image_path: assets/img/1767337100637.jpg
     alt: "Vanderbilt Aerospace Design Lab Work"
