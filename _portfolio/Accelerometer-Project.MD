@@ -1,4 +1,5 @@
 ---
+published: false  # hidden until real write-up is added (body is still template text)
 title: "Accelerometer Project"
 excerpt: "Testing out different wheel materials on acceleration"
 header:

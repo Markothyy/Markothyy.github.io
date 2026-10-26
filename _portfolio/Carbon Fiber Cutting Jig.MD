@@ -1,23 +1,32 @@
 ---
 title: "Carbon Fiber Airframe Cutting Jig"
-excerpt: "Making sharper cuts for carbon fiber airframes."
+excerpt: "A jig for square, repeatable cuts on carbon fiber rocket airframes, holding ±1/32 in."
 header:
   image: /assets/img/1767337100637.jpg
   teaser: /assets/img/1767337100637.jpg
-gallery:
-  - image_path: assets/img/Slide-3.png
-  - image_path: assets/img/Slide-2.png
-  - image_path: assets/img/Slide-4.png
-   
 ---
 
 # Problem
 
-* **Massive Print Area: 1140 x 1200 x 1100 mm.** With a build envelop just shy of 4 feet in all dimensions, the LF3DP is capable of printing furniture and other large objects.
-* **High Volumetric Output Extruder: 1 kg/hr - 450 C.** This printer come standard with a MDPH2 extruder by Massive Dimension, which can extrude at a rate of 1 kg/hr. Unlike typical filament extruders, the MDPH2 uses a screw to convey and liquify plastic pellets before the molten material is pushed out of a large nozzle (1 to 5 mm extrusion diameter). Please note: This printer can also be configured for other high flow rate extruders, such as the Typhoon and Pulsar by Dyze Design.
-* **Affordable Pellet Feedstock** Pellets are the cheapest form of feedstock for any plastic-based manufacturing process. Save 50-75% of material costs by using pellets instead of spools of filament. Concentrated colorant can be added to the virgin material to achieve any color in the rainbow without requiring large amounts of storage. Recyled material can also be used for sustainable material printing.
+The Vanderbilt Aerospace Design Lab builds its rocket airframes and couplers from carbon fiber tubes that have to be cut to length. Cutting by hand makes it hard to keep the cut edge square to the tube axis, and an edge that isn't square causes misalignment where sections join. The team's vehicle requirements call for 1/32 in of flatness across the entire cut edge.
 
-# CAD Model
-<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811e513816e89740228?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+# Design
 
-{% include gallery caption="Large Format 3D Printer Gallery" %}
+I designed and built a jig that holds the tube in fixed cradles and guides a Dremel cutter at a set position:
+
+* An aluminum backstop with a locating slot sets the section length and keeps the tube from shifting.
+* A sliding Dremel attachment can be micro-adjusted to dial in the exact cut location.
+* The jig handles airframe and coupler sections from 4 in to 4 ft long.
+
+# How It's Used
+
+1. Set the backstop to the rough section length and lock it in place.
+2. Micro-adjust the Dremel slide to the exact required dimension.
+3. Turn on the Dremel, plunge it slowly into the tube wall, and lock it in place with a wedge.
+4. Rotate the tube by hand about its axis until the cut is complete.
+
+# Results
+
+* Holds ±1/32 in perpendicularity and flatness on the cut edge, meeting the team requirement
+* A prototype was qualified during subscale construction, and the team requires the jig for all airframe cuts
+* Faster and more repeatable than cutting by hand

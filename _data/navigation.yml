@@ -5,11 +5,7 @@ main:
   - title: "About"
     url: /about/
   - title: "VADL"
-    url: /VanderbiltAerospaceDesignLabWork/
-  - title: "Additive Projects"
-    url: /AdditiveExperience/
-  - title: "Subtractive Projects"
-    url: /SubtractiveExperience/
+    url: /VADL/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

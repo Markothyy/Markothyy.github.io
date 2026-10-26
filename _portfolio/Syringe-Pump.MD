@@ -1,6 +1,6 @@
 ---
 title: "Rapid Prototype Syringe Pump"
-excerpt: "A DIY Medical Syringe Pump using addtive manufacturing techniques and microelectronics."
+excerpt: "A DIY medical syringe pump using additive manufacturing techniques and microelectronics."
 header:
   image: /assets/img/Bettersyringpump.png
   teaser: /assets/img/rendersyringe.png

@@ -1,12 +1,11 @@
 ---
-title: "Muli-Material Pliers"
+title: "Multi-Material Pliers"
 excerpt: "A rapid prototyped pair of pliers capable of gripping items using TPU and PETG"
 header:
   image: /assets/img/CadA1_2026-Feb-02_01-42-20AM-000_CustomizedView9265646143_png.png
   teaser: /assets/img/CadA1_2026-Feb-02_01-42-20AM-000_CustomizedView9265646143_png.png
 gallery:
   - image_path: assets/img/IMG_2440.JPG
-  - image_path: /assets/img/IMG_2523-ezgif.com-video-to-gif-converter.mo
   - image_path: assets/img/IMG_2439.JPG
 
    

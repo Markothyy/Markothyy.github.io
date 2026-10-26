@@ -1,4 +1,5 @@
 ---
+published: false  # hidden until real write-up is added (body is still template text)
 title: "Stewart Platform"
 excerpt: "A DIY balancing device using servos and an Arduino Mega."
 header:

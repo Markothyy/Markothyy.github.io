@@ -1,4 +1,5 @@
 ---
+published: false  # hidden until real write-up is added (body is still template text)
 title: "Rocket Telemetry System with Python"
 excerpt: "A 1 kg/hr pellet extruder and 1 cubic meter build envelope for printing furniture."
 header:

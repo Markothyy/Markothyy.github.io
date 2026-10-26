@@ -9,19 +9,29 @@ header:
   actions:
     - label: "My Projects"
       url: "/portfolio/"
-excerpt: "Mark Sedek is an engineering student with a passion for aerospace engineering, aiming for the defense/manufacturing industry. Experience with computer aided design and manufaturing tools, as well has hands on skills. Mark is interested in roles in engineering such as test, system, and build engineering. "
+excerpt: "Mark Sedek is an engineering student with a passion for aerospace engineering, aiming for the defense/manufacturing industry. Experience with computer aided design and manufacturing tools, as well as hands-on skills. Mark is interested in roles in engineering such as test, system, and build engineering. "
 feature_row:
   - image_path: assets/img/1767337100637.jpg
     alt: "Vanderbilt Aerospace Design Lab Work"
     title: "Vanderbilt Aerospace Design Lab"
-    excerpt: "Vehicle airframe development, and full-scale rocket manufacturing"
-  - image_path: assets/img/drone.jpg
-    alt: "Generatively designed lightweight drone"
-    title: "Generative Design Experience"
-    excerpt: "Develop a lightweight drone with Autodesk Fusion 360 Generative Design"
+    excerpt: "Vibration test benches, avionics bays, and airframe tooling for NASA Student Launch"
+    url: "/VADL/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: assets/img/rocket-fin-control/system-labeled.jpg
+    alt: "Mini rocket fin control system"
+    title: "Rocket Fin Control System"
+    excerpt: "IMU-based active fin control with sensor fusion and servo actuation"
+    url: "/portfolio/Rocket-Fin/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
   - image_path: assets/img/Bettersyringpump.png
+    alt: "Rapid prototyped medical syringe pump"
     title: "Rapid Prototyping Projects"
-    excerpt: "Prototype scale of a medical syringe pump "
+    excerpt: "Prototype scale of a medical syringe pump"
+    url: "/portfolio/Syringe-Pump/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 ---
 
 {% include feature_row %}

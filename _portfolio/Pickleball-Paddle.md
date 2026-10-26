@@ -1,16 +1,6 @@
 ---
 title: "3D Printed Pickleball Paddle"
 excerpt: "A multi-part pickleball paddle built with Carbon Fiber ABS, an Onyx handle core, and TPU grip and edge protection features."
-header:
-  image: /assets/img/pickleball-paddle-cover.jpg
-  teaser: /assets/img/pickleball-paddle-cover.jpg
-gallery:
-  - url: /assets/img/pickleball-paddle-1.jpg
-    image_path: /assets/img/pickleball-paddle-1.jpg
-  - url: /assets/img/pickleball-paddle-3.jpg
-    image_path: /assets/img/pickleball-paddle-3.jpg
-  - url: /assets/img/pickleball-paddle-3.jpg
-    image_path: /assets/img/pickleball-paddle-3.jpg
 ---
 
 ## Overview
@@ -39,4 +29,4 @@ A big part of the project was thinking about how the paddle would feel in use, n
 
 Because of the paddle size, I designed it as a multi-part assembly rather than a single printed object. Breaking the design into separate parts made it easier to print, easier to refine, and easier to assemble. It also made the multi-material layout possible, since each component could be printed in the material best suited to its function.
 
-{% include gallery caption="CAD development, printed components, and final assembly of the 3D printed pickleball paddle." %}
+<!-- Photos not uploaded yet (pickleball-paddle-cover.jpg, -1.jpg, -3.jpg). Add them to assets/img/ and restore the header/gallery front matter to show them. -->

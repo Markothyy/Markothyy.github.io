@@ -8,14 +8,14 @@ author_profile: true
 
 ## Education
 
-Mark prides himself on his diverse skill set. His most prominent fields of expertise are additive manufacturing (i.e., 3D printing) and fluid analysis. The aim for my career is to contribute the growing industry of aerospace astronautics and defense. This is through my coursework such as Aerospace Propulsion, Subtractive and Addtive Manufacturing, and my work within the Vanderbilt Aerospace Design Lab.  
+Mark prides himself on his diverse skill set. His most prominent fields of expertise are additive manufacturing (i.e., 3D printing) and fluid analysis. The aim for my career is to contribute to the growing aerospace, astronautics, and defense industries. This is through my coursework such as Aerospace Propulsion, Subtractive and Additive Manufacturing, and my work within the Vanderbilt Aerospace Design Lab.  
 
 * Vanderbilt University, Expected Graduation Date May 2027
   * BS Mechanical Engineering
   * Minor Digital Fabrication 
 * Lipscomb University
   * BS Mechanical Engineering
-  * Minor Applied Mathamatics
+  * Minor Applied Mathematics
 
 ## Work Experience 
 

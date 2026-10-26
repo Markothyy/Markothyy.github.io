@@ -1,4 +1,5 @@
 ---
+published: false  # hidden until real write-up is added (body is still template text)
 title: "Generative Design Drone"
 excerpt: "Using Autodesk's Fusion 360 Generative Design Feature I made a drone"
 header:

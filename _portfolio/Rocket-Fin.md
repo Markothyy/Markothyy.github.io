@@ -2,21 +2,15 @@
 title: "Mini Rocket Fin Control System"
 excerpt: "A tabletop rocket fin control demonstrator using an Arduino Uno R4, MPU-6050 IMU, PCA9685 servo driver, I2C LCD, four servo-actuated fins, and a 3D printed airframe."
 header:
-  image: /assets/img/rocket-fin-control/IMG_3516.JPG
-  teaser: /assets/img/rocket-fin-control/FinandServos.png
+  image: /assets/img/rocket-fin-control/system-labeled.jpg
+  teaser: /assets/img/rocket-fin-control/system-labeled.jpg
 gallery:
-  - image_path: /assets/img/rocket-fin-control/IMG_3516.JPG
-    alt: "Full mini rocket fin control system with electronics and fins"
+  - image_path: /assets/img/rocket-fin-control/system-labeled.jpg
+    alt: "Full mini rocket fin control system with labeled electronics and fins"
     title: "Full System Assembly"
-  - image_path: /assets/img/rocket-fin-control/FinandServos.png
-    alt: "Labeled fin and servo channel layout"
-    title: "Servo and Fin Channel Layout"
-  - image_path: /assets/img/rocket-fin-control/IMG_3517.JPG
-    alt: "Servo horn connected to 3D printed fin"
-    title: "Servo Horn to Fin Connection"
-  - image_path: /assets/img/rocket-fin-control/IMG_3522.JPG
-    alt: "LCD displaying live servo and IMU values"
-    title: "Live LCD Feedback"
+  - image_path: /assets/img/rocket-fin-control/cad-measurements.jpg
+    alt: "Fusion 360 measurements of fin area, airframe diameter, and fin location"
+    title: "CAD Measurements"
 ---
 
 # Mini Rocket Fin Control System
@@ -25,7 +19,9 @@ The Mini Rocket Fin Control System is a tabletop mechatronics demonstrator that 
 
 The goal was to build a simplified active fin control system. When the airframe is tilted, the IMU measures the motion, the Arduino estimates pitch and roll, and the servos move the fins in response.
 
-![Mini Rocket Fin Control System](/assets/img/rocket-fin-control/IMG_3516.JPG)
+![Mini Rocket Fin Control System](/assets/img/rocket-fin-control/system-labeled.jpg)
+
+**[Read the full project report (PDF)](/assets/files/Mini_Rocket_Fin_Control_Report.pdf)** · **[View the code on GitHub](https://github.com/Markothyy/RocketFinControlSystem)**
 
 ## Project Summary
 
@@ -66,7 +62,8 @@ The mechanical structure was built around a 3D printed airframe section. Four fi
 
 The fins were glued to the servo horns so that the fins would not slip during motion. This mattered because the code assumes that the commanded servo angle matches the actual fin angle. If the fin slipped relative to the horn, the Arduino would command one angle while the fin physically sat at another angle.
 
-![Servo Horn and Fin Connection](/assets/img/rocket-fin-control/IMG_3517.JPG)
+<!-- Photo not uploaded yet; add it to assets/img/rocket-fin-control/ and remove this comment wrapper to show it:
+![Servo Horn and Fin Connection](/assets/img/rocket-fin-control/IMG_3517.JPG) -->
 
 The measured fin face area was:
 
@@ -88,7 +85,7 @@ The airframe and fins were modeled in Fusion 360. The CAD model was used to desi
 
 [View the Fusion 360 airframe and fin model](https://a360.co/3PvCZI4)
 
-![CAD Measurements](/assets/img/rocket-fin-control/measurephoto.png)
+![CAD Measurements](/assets/img/rocket-fin-control/cad-measurements.jpg)
 
 ## Electronics Overview
 
@@ -105,7 +102,8 @@ The MPU-6050 is powered from 3.3 V. The LCD and PCA9685 logic side are powered f
 
 The Arduino and the external servo power supply share a common ground. This is necessary because the servo control signals need the same voltage reference as the servo power.
 
-![Arduino and IMU Wiring](/assets/img/rocket-fin-control/IMG_3514.jpg)
+<!-- Photo not uploaded yet; add it to assets/img/rocket-fin-control/ and remove this comment wrapper to show it:
+![Arduino and IMU Wiring](/assets/img/rocket-fin-control/IMG_3514.jpg) -->
 
 ## Servo and Fin Layout
 
@@ -120,7 +118,8 @@ The PCA9685 controls the four servos through separate channels.
 
 The top and bottom fins respond to pitch. The right and left fins respond to roll.
 
-![Servo and Fin Layout](/assets/img/rocket-fin-control/FinandServos.png)
+<!-- Photo not uploaded yet; add it to assets/img/rocket-fin-control/ and remove this comment wrapper to show it:
+![Servo and Fin Layout](/assets/img/rocket-fin-control/FinandServos.png) -->
 
 ## IMU Math
 
@@ -336,7 +335,8 @@ The LCD displays live system values during operation. It cycles through:
 - Gain and deadband
 - Servo range and trim values
 
-![LCD Live Feedback](/assets/img/rocket-fin-control/IMG_3522.JPG)
+<!-- Photo not uploaded yet; add it to assets/img/rocket-fin-control/ and remove this comment wrapper to show it:
+![LCD Live Feedback](/assets/img/rocket-fin-control/IMG_3522.JPG) -->
 
 The Serial Monitor was used for testing and calibration. It allowed the system to be zeroed, centered, debugged, and tested without changing the code.
 
