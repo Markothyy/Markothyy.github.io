@@ -1,22 +1,37 @@
 ---
-published: false  # hidden until real write-up is added (body is still template text)
 title: "Generative Design Drone"
-excerpt: "Using Autodesk's Fusion 360 Generative Design Feature I made a drone"
+excerpt: "A topology-optimized quadcopter airframe designed with Fusion 360 generative design, with an STM32-based flight controller. In progress."
 header:
   image: /assets/img/drone.jpg
   teaser: /assets/img/drone.jpg
-gallery:
-  - url: /assets/img/Cyber-Scooter-1.jpg
-    image_path: assets/img/Cyber-Scooter-1.jpg
-    alt: "placeholder image 1"
-  - url: /assets/img/Cyber-Scooter-2.jpg
-    image_path: assets/img/Cyber-Scooter-2.jpg
-    alt: "placeholder image 2"
-  - url: /assets/img/Cyber-Scooter-3.jpg
-    image_path: assets/img/Cyber-Scooter-3.jpg
-    alt: "placeholder image 3"
 ---
 
-Up until recently I rode a Gotrax E-Scooter to work every day. The scooter retailed for $300, but it quickly paid for itself after I was able to forgo gas and a parking spot at work. However, after about a year and a half of driving the scooter daily the battery started to lose charge quickly and there were a couple other mechanical issues that forced me to stop riding the scooter. Instead of purchasing a new scooter, I decided to go the DIY route to build a one-off scooter that fits my needs.
+*Status: in progress*
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
+# Overview
+
+This project uses Autodesk Fusion 360's generative design tools to create a lightweight quadcopter airframe. Instead of drawing the frame by hand, I define where the motors, flight controller, and landing points have to be, apply the loads the frame will see in flight and on landing, and let the solver grow material only along the load paths. The result is an organic, low-mass structure that I'm building to fly.
+
+# Design Approach
+
+* **Preserve geometry:** the mounting features the frame must keep, such as the motor mounts on each arm
+* **Obstacle geometry:** keep-out zones the solver isn't allowed to fill
+* **Load cases:** motor thrust and landing loads
+* **Manufacturing:** outcomes are set up for additive manufacturing, since the organic shapes generative design produces are impractical to machine
+
+# Analysis
+
+* Checking the generative outcomes for structural performance under thrust and landing loads in ANSYS
+* Running CFD to assess the frame's drag and its effect on control performance
+
+# Electronics
+
+The drone is built around an STM32-based flight controller with an onboard IMU, four brushless motors, and ESCs. Integrating these is the current step toward flight testing.
+
+# CAD Model
+
+The model below is interactive. Click and drag to rotate it, and scroll to zoom.
+
+<div class="media-frame">
+  <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811e513816e89740228?mode=embed" width="100%" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0" title="Generative design drone CAD model" style="display:block;border:0;"></iframe>
+</div>
