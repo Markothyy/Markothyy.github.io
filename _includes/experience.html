@@ -1,0 +1,16 @@
+<ol class="exp">
+  {%- for e in site.data.experience %}
+  <li class="exp__row">
+    <span class="exp__dates">{{ e.dates }}</span>
+    <div class="exp__main">
+      <h3 class="exp__org">{{ e.org }}</h3>
+      <p class="exp__role">{{ e.role }}</p>
+    </div>
+    <p class="exp__summary">{{ e.summary }}</p>
+    {%- if e.link %}
+    {%- assign first = e.link | slice: 0 %}
+    <a class="exp__link" href="{% if first == '/' %}{{ e.link | relative_url }}{% else %}{{ e.link }}{% endif %}">{{ e.link_label }}<span class="visually-hidden">: {{ e.org }}</span></a>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ol>

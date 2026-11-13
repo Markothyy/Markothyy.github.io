@@ -1,14 +1,18 @@
 ---
-title: "Generative Design Skateboard Truck"
-excerpt: "A generatively designed skateboard truck hanger"
+summary: "A generative design truck hanger with an integrated motor mount for an electric longboard."
+category: "Structures"
+tools: "Fusion 360 generative design"
+featured: false
+order: 21
+title: "Generative design skateboard truck"
 header:
-  image: /assets/img/IMG_3341.JPG
+  image: /assets/img/web/IMG_3341.jpg
   teaser: /assets/img/Gendesignthumbnail.png
 gallery:
-  - image_path: /assets/img/IMG_3341.JPG
-  - image_path: /assets/img/IMG_3342.JPG
-  - image_path: /assets/img/IMG_3347.JPG
-  - image_path: /assets/img/IMG_3349.JPG
+  - image_path: /assets/img/web/IMG_3341.jpg
+  - image_path: /assets/img/web/IMG_3342.jpg
+  - image_path: /assets/img/web/IMG_3347.jpg
+  - image_path: /assets/img/web/IMG_3349.jpg
 ---
 
 # Generative Design Skateboard Truck Hanger with Integrated Motor Mount
@@ -103,13 +107,13 @@ The loading conditions were chosen to represent realistic forces that the truck 
 
 The final truck was assembled with the longboard deck, motor, belt, pulley, and wheel system to verify the overall fit of the design.
 
-![Completed longboard assembly](/assets/img/IMG_3341.JPG)
+![Completed longboard assembly](/assets/img/web/IMG_3341.jpg)
 
-![Assembly side view](/assets/img/IMG_3342.JPG)
+![Assembly side view](/assets/img/web/IMG_3342.jpg)
 
-![Assembly alternate view](/assets/img/IMG_3347.JPG)
+![Assembly alternate view](/assets/img/web/IMG_3347.jpg)
 
-![Truck model by itself](/assets/img/IMG_3349.JPG)
+![Truck model by itself](/assets/img/web/IMG_3349.jpg)
 
 ---
 

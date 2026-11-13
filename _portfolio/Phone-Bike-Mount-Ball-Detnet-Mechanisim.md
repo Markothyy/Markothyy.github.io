@@ -1,12 +1,17 @@
 ---
-title: "Top-Down Bike Phone Mount/Holder"
-excerpt: "A top-down modeled, filament-printed phone holder designed for secure mounting, easy phone insertion, and rotation between portrait and landscape orientations."
+short_title: "Bike phone mount"
+summary: "A top-down modeled phone mount with a ball-detent mechanism for switching between portrait and landscape."
+category: "Additive manufacturing"
+tools: "Fusion 360, PLA printing"
+featured: false
+order: 23
+title: "Top-down bike phone mount"
 header:
-  image: /assets/img/RealL2.JPG
-  teaser: /assets/img/RealL2.JPG
+  image: /assets/img/web/RealL2.jpg
+  teaser: /assets/img/web/RealL2.jpg
 gallery:
-  - image_path: /assets/img/RealL2.JPG
-  - image_path: /assets/img/RealL1.JPG
+  - image_path: /assets/img/web/RealL2.jpg
+  - image_path: /assets/img/web/RealL1.jpg
 ---
 
 # Project Overview
@@ -38,8 +43,8 @@ Parts were all printed using PLA, which upon testing proves it can hold up a pho
 
 
 # Real-Life Photos
-![Real Life Photo1](/assets/img/RealL1.JPG)
-![Real Life Photo2](/assets/img/RealL2.JPG)
+![Real Life Photo1](/assets/img/web/RealL1.jpg)
+![Real Life Photo2](/assets/img/web/RealL2.jpg)
 
 # Rotation GIF
 

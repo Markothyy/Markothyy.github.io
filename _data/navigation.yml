@@ -1,14 +1,7 @@
-# main links
 main:
-  - title: "Portfolio"
+  - title: "Work"
     url: /portfolio/
+  - title: "Experience"
+    url: /#experience
   - title: "About"
     url: /about/
-  - title: "VADL"
-    url: /VADL/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/

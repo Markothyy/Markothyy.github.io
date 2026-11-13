@@ -1,0 +1,20 @@
+{%- assign p = include.project -%}
+{%- assign tile_img = p.teaser | default: p.image | default: p.header.teaser | default: p.header.image -%}
+<a class="tile{% if p.tile == 'wide' %} tile--wide{% endif %}{% if p.tile_style %} tile--{{ p.tile_style }}{% endif %}{% unless tile_img %} tile--plain{% endunless %}" href="{{ p.url | relative_url }}">
+  {%- if tile_img %}
+  <span class="tile__media"><img src="{{ tile_img | relative_url }}" alt="" loading="lazy"></span>
+  {%- elsif p.facts %}
+  <span class="tile__specs">
+    {%- for f in p.facts limit: 3 %}
+    <span class="tile__spec"><span class="tile__spec-label">{{ f.label }}</span><span class="tile__spec-value">{{ f.value }}</span></span>
+    {%- endfor %}
+  </span>
+  {%- endif %}
+  <span class="tile__body">
+    <span class="tile__title">{{ p.short_title | default: p.title }}</span>
+    {%- unless tile_img %}
+    <span class="tile__summary">{{ p.summary }}</span>
+    {%- endunless %}
+    <span class="tile__meta">{{ p.context }}{% if p.context and p.year %}, {% endif %}{{ p.year }}</span>
+  </span>
+</a>

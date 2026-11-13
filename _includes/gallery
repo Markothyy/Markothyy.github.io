@@ -1,35 +1,17 @@
-{% if include.id %}
-  {% assign gallery = page[include.id] %}
-{% else %}
-  {% assign gallery = page.gallery %}
-{% endif %}
-
-{% if include.layout %}
-  {% assign gallery_layout = include.layout %}
-{% else %}
-  {% if gallery.size == 2 %}
-    {% assign gallery_layout = 'half' %}
-  {% elsif gallery.size >= 3 %}
-    {% assign gallery_layout = 'third' %}
-  {% else %}
-    {% assign gallery_layout = '' %}
-  {% endif %}
-{% endif %}
-
-<figure class="{{ gallery_layout }} {{ include.class }}">
-  {% for img in gallery %}
-    {% if img.url %}
-      <a href="{{ img.url | relative_url }}"
-        {% if img.title %}title="{{ img.title }}"{% endif %}>
-          <img src="{{ img.image_path | relative_url }}"
-               alt="{% if img.alt %}{{ img.alt }}{% endif %}">
-      </a>
-    {% else %}
-      <img src="{{ img.image_path | relative_url }}"
-           alt="{% if img.alt %}{{ img.alt }}{% endif %}">
-    {% endif %}
-  {% endfor %}
-  {% if include.caption %}
-    <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
-  {% endif %}
+{%- if page.gallery and page.gallery.size > 0 %}
+<figure class="gallery">
+  <div class="gallery__grid">
+    {%- for img in page.gallery %}
+    {%- assign src = img.image_path | default: img.url %}
+    {%- assign first = src | slice: 0 %}
+    {%- unless first == '/' %}{% assign src = '/' | append: src %}{% endunless %}
+    <a class="gallery__item" href="{{ src | relative_url }}">
+      <img src="{{ src | relative_url }}" alt="{{ img.alt | default: img.title | escape }}" loading="lazy">
+    </a>
+    {%- endfor %}
+  </div>
+  {%- if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {%- endif %}
 </figure>
+{%- endif %}

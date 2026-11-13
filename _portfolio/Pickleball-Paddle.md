@@ -1,6 +1,10 @@
 ---
-title: "3D Printed Pickleball Paddle"
-excerpt: "A multi-part pickleball paddle built with Carbon Fiber ABS, an Onyx handle core, and TPU grip and edge protection features."
+summary: "A multi-material paddle with a carbon fiber ABS body, an Onyx handle core, and a TPU grip and edge guard."
+category: "Additive manufacturing"
+tools: "Fusion 360, multi-material FFF printing"
+featured: false
+order: 24
+title: "3D-printed pickleball paddle"
 ---
 
 ## Overview

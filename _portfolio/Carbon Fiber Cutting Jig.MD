@@ -1,6 +1,21 @@
 ---
-title: "Carbon Fiber Airframe Cutting Jig"
-excerpt: "A jig for square, repeatable cuts on carbon fiber rocket airframes, holding ±1/32 in."
+short_title: "Airframe cutting jig"
+summary: "A jig that holds carbon fiber airframe tubes square to a sliding cutter for clean, repeatable cuts on rocket body sections."
+category: "Tooling"
+context: "Vanderbilt Aerospace Design Lab"
+year: "2025"
+role: "Design and build"
+status: "In use by the team"
+featured: true
+order: 6
+facts:
+  - label: "Tolerance"
+    value: "±1/32 in perpendicularity and flatness"
+  - label: "Section length"
+    value: "4 in to 4 ft"
+  - label: "Cutter"
+    value: "Dremel on a micro-adjustable slide"
+title: "Carbon fiber airframe cutting jig"
 header:
   image: /assets/img/1767337100637.jpg
   teaser: /assets/img/1767337100637.jpg

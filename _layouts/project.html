@@ -1,0 +1,73 @@
+---
+layout: default
+---
+{%- assign hero_img = page.image | default: page.header.image -%}
+<article class="project">
+  <header class="project__head">
+    <h1 class="project__title">{{ page.title }}</h1>
+    <div class="project__intro">
+      <div class="project__kind">
+        {%- if page.category %}<p>{{ page.category }}</p>{% endif %}
+        {%- if page.context %}<p class="project__context">{{ page.context }}</p>{% endif %}
+      </div>
+      <p class="project__summary">{{ page.summary | default: page.excerpt }}</p>
+      <dl class="project__meta">
+        {%- if page.year %}<div><dt>Year</dt><dd>{{ page.year }}</dd></div>{% endif %}
+        {%- if page.role %}<div><dt>Role</dt><dd>{{ page.role }}</dd></div>{% endif %}
+        {%- if page.tools %}<div><dt>Tools</dt><dd>{{ page.tools }}</dd></div>{% endif %}
+        {%- if page.status %}<div><dt>Status</dt><dd>{{ page.status }}</dd></div>{% endif %}
+      </dl>
+    </div>
+  </header>
+
+  {%- if hero_img %}
+  <figure class="project__hero{% if page.image_fit == 'contain' %} project__hero--contain{% endif %}">
+    <img src="{{ hero_img | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
+  </figure>
+  {%- endif %}
+
+  {%- if page.facts %}
+  <section class="facts" aria-label="Key figures">
+    {%- for f in page.facts %}
+    <div class="facts__cell">
+      <p class="facts__label">{{ f.label }}</p>
+      <p class="facts__value">{{ f.value }}</p>
+    </div>
+    {%- endfor %}
+  </section>
+  {%- endif %}
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  {%- if page.links %}
+  <div class="project__links">
+    {%- for l in page.links %}
+    {%- assign first = l.url | slice: 0 %}
+    <a class="button" href="{% if first == '/' %}{{ l.url | relative_url }}{% else %}{{ l.url }}{% endif %}">{{ l.label }}</a>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  {%- assign all = site.portfolio | sort: "order" %}
+  {%- assign list = "" | split: "" %}
+  {%- for p in all %}{% if p.featured %}{% assign list = list | push: p %}{% endif %}{% endfor %}
+  {%- for p in all %}{% unless p.featured %}{% assign list = list | push: p %}{% endunless %}{% endfor %}
+  {%- assign next = nil %}
+  {%- for p in list %}
+    {%- if p.url == page.url %}
+      {%- assign ni = forloop.index0 | plus: 1 %}
+      {%- if ni >= list.size %}{% assign ni = 0 %}{% endif %}
+      {%- assign next = list[ni] %}
+    {%- endif %}
+  {%- endfor %}
+  {%- if next %}
+  <nav class="next" aria-label="Next project">
+    <a href="{{ next.url | relative_url }}">
+      <span class="next__label">Next project</span>
+      <span class="next__title">{{ next.title }}</span>
+    </a>
+  </nav>
+  {%- endif %}
+</article>

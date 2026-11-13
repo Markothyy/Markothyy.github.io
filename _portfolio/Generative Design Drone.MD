@@ -1,12 +1,21 @@
 ---
-title: "Generative Design Drone"
-excerpt: "A topology-optimized quadcopter airframe designed with Fusion 360 generative design, with an STM32-based flight controller. In progress."
+summary: "A quadcopter airframe shaped with Fusion 360 generative design around thrust and landing loads, built around an STM32-based flight controller."
+category: "Structures"
+context: "Generative design"
+role: "Design and analysis"
+tools: "Fusion 360, ANSYS, CFD, STM32"
+status: "In progress"
+featured: true
+order: 7
+tile: wide
+links:
+  - label: "CAD model"
+    url: "https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811e513816e89740228"
+title: "Generative design drone"
 header:
   image: /assets/img/drone.jpg
   teaser: /assets/img/drone.jpg
 ---
-
-*Status: in progress*
 
 # Overview
 

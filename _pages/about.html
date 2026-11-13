@@ -1,0 +1,53 @@
+---
+layout: default
+title: "About"
+permalink: /about/
+summary: "Mechanical engineering student at Vanderbilt University, graduating in May 2027."
+---
+<header class="page__head">
+  <h1 class="page__title">About</h1>
+</header>
+
+<section class="about">
+  <div class="about__photo">
+    <img src="{{ '/assets/img/1759813683074.jpg' | relative_url }}" alt="Mark Sedek" width="400" height="400">
+  </div>
+
+  <div class="about__text">
+    <p>I'm a mechanical engineering student at Vanderbilt University, finishing a B.S. with a minor in digital fabrication in May 2027.</p>
+    <p>The part of engineering I enjoy most is design: taking an idea through CAD, drawings, and fabrication, then testing it to see what holds up. At the Vanderbilt Aerospace Design Lab I work on test equipment, flight hardware, and tooling for the team's NASA Student Launch rocket. Last summer I was a tunnel engineering intern at The Boring Company, where I designed tooling and storage for two tunnel boring machines. For senior design, I'm part of a four-person team building an in-space manufacturing payload.</p>
+    <p>I'm looking for design, test, systems, and build engineering roles in aerospace and defense after I graduate.</p>
+  </div>
+
+  <dl class="about__facts">
+    <div>
+      <dt>Education</dt>
+      <dd>B.S. Mechanical Engineering, Vanderbilt University, expected May 2027</dd>
+      <dd>Minor in Digital Fabrication</dd>
+    </div>
+    <div>
+      <dt>Previously</dt>
+      <dd>Mechanical engineering and applied mathematics, Lipscomb University</dd>
+    </div>
+    <div>
+      <dt>Contact</dt>
+      <dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd>
+      <dd><a href="{{ site.linkedin }}">LinkedIn</a></dd>
+      <dd><a href="{{ site.resume | relative_url }}">Résumé (PDF)</a></dd>
+    </div>
+  </dl>
+</section>
+
+<section class="section section--light" aria-labelledby="exp-title">
+  <div class="section__head">
+    <h2 class="section__title" id="exp-title">Experience</h2>
+  </div>
+  {% include experience.html %}
+</section>
+
+<section class="section" aria-labelledby="tools-title">
+  <div class="section__head">
+    <h2 class="section__title" id="tools-title">Tools I use</h2>
+  </div>
+  {% include tools.html %}
+</section>

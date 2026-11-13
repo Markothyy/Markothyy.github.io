@@ -1,0 +1,40 @@
+---
+layout: default
+title: "Work"
+permalink: /portfolio/
+summary: "Engineering work from internships, Vanderbilt's rocket team, and senior design, followed by projects from coursework."
+---
+<header class="page__head page__head--wide">
+  <h1 class="page__title">Work</h1>
+  <p class="page__summary">{{ page.summary }}</p>
+</header>
+
+<section class="section section--flush" aria-labelledby="featured-title">
+  <h2 class="visually-hidden" id="featured-title">Engineering work</h2>
+  {%- assign featured = site.portfolio | where: "featured", true | sort: "order" %}
+  <div class="grid">
+    {%- for p in featured %}
+    {% include tile.html project=p %}
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section section--light" aria-labelledby="archive-title">
+  <div class="section__head">
+    <h2 class="section__title" id="archive-title">Coursework projects</h2>
+  </div>
+  {%- assign archive = site.portfolio | where: "featured", false | sort: "order" %}
+  <ul class="archive">
+    {%- for p in archive %}
+    {%- assign thumb = p.teaser | default: p.image | default: p.header.teaser | default: p.header.image %}
+    <li>
+      <a class="archive__row" href="{{ p.url | relative_url }}">
+        <span class="archive__thumb">{% if thumb %}<img src="{{ thumb | relative_url }}" alt="" loading="lazy">{% endif %}</span>
+        <span class="archive__title">{{ p.short_title | default: p.title }}</span>
+        <span class="archive__desc">{{ p.summary }}</span>
+        <span class="archive__year">{{ p.year }}</span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>

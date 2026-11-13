@@ -1,12 +1,17 @@
 ---
-title: "Multi-Material Pliers"
-excerpt: "A rapid prototyped pair of pliers capable of gripping items using TPU and PETG"
+summary: "Print-in-place pliers with rigid jaws and a TPU section that springs them back open."
+category: "Additive manufacturing"
+year: "2026"
+tools: "Fusion 360, multi-material FFF printing"
+featured: false
+order: 22
+title: "Multi-material pliers"
 header:
   image: /assets/img/CadA1_2026-Feb-02_01-42-20AM-000_CustomizedView9265646143_png.png
   teaser: /assets/img/CadA1_2026-Feb-02_01-42-20AM-000_CustomizedView9265646143_png.png
 gallery:
-  - image_path: assets/img/IMG_2440.JPG
-  - image_path: assets/img/IMG_2439.JPG
+  - image_path: /assets/img/web/IMG_2440.jpg
+  - image_path: /assets/img/web/IMG_2439.jpg
 
    
 ---

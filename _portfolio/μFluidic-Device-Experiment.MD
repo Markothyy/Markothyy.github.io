@@ -1,9 +1,15 @@
 ---
-title: "Pinch Flow Fractionation Microfluidic Device"
-excerpt: "A resin printed microfluidic device designed to sort particles by size using pinch flow fractionation"
+short_title: "Microfluidic particle sorter"
+summary: "A resin-printed mold for a PDMS device that sorts particles by size using pinch flow fractionation."
+category: "Microfluidics"
+context: "CHBE 4200"
+tools: "Resin printing, PDMS casting"
+featured: false
+order: 25
+title: "Pinch flow fractionation microfluidic device"
 header:
-  image: /assets/img/IMG_3049.JPG
-  teaser: /assets/img/IMG_3049.JPG
+  image: /assets/img/web/IMG_3049.jpg
+  teaser: /assets/img/web/IMG_3049.jpg
 ---
 
 # Introduction
@@ -43,10 +49,10 @@ The most important steps for creating a microfluidic device with resin printing 
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b6028112e76dd85967fe0f8?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
 
 
-![Picture of the casted device](/assets/img/IMG_3050.JPG)
+![Picture of the casted device](/assets/img/web/IMG_3050.jpg)
 
 
-![Plasma treating process](/assets/img/Plasma-Treating-Image (2).jpg)
+![Plasma treating process](/assets/img/web/Plasma-Treating-Image-2.jpg)
 
 # Discussion
 
@@ -62,7 +68,7 @@ Testing demonstrated partial particle separation, indicating that the device was
 
 # Testing
 
-![Picture of testing setup](/assets/img/IMG_3049.JPG)
+![Picture of testing setup](/assets/img/web/IMG_3049.jpg)
 
 
 

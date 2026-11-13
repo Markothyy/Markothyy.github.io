@@ -1,0 +1,72 @@
+---
+layout: default
+title: "Mark Sedek"
+body_class: "is-dark is-home"
+---
+<section class="hero" aria-labelledby="hero-title">
+  <h1 class="hero__title" id="hero-title">
+    <span class="hero__line"><span>Mark Sedek</span></span>
+    <span class="hero__line"><span>Mechanical</span></span>
+    <span class="hero__line"><span>Engineering</span></span>
+  </h1>
+
+  <dl class="titleblock" aria-label="Summary">
+    <div class="titleblock__cell">
+      <dt>School</dt>
+      <dd>Vanderbilt University</dd>
+    </div>
+    <div class="titleblock__cell">
+      <dt>Degree</dt>
+      <dd>B.S., expected May 2027</dd>
+    </div>
+    <div class="titleblock__cell">
+      <dt>Minor</dt>
+      <dd>Digital fabrication</dd>
+    </div>
+    <div class="titleblock__cell">
+      <dt>Focus</dt>
+      <dd>Design, test, and build</dd>
+    </div>
+    <div class="titleblock__cell">
+      <dt>Based in</dt>
+      <dd>Nashville, TN</dd>
+    </div>
+    <div class="titleblock__cell titleblock__cell--mark" aria-hidden="true">
+      <img src="{{ '/assets/img/logo-white.png' | relative_url }}" alt="" width="56" height="56">
+    </div>
+  </dl>
+</section>
+
+<section class="intro">
+  <p class="intro__text">I design and build hardware: test equipment, tooling, and structures for flight.</p>
+  <p class="intro__note">Right now that means vibration test benches for Vanderbilt's rocket team and an in-space manufacturing payload for senior design. Last summer I designed tooling for tunnel boring machines at The Boring Company.</p>
+</section>
+
+<section class="section" aria-labelledby="work-title">
+  <div class="section__head">
+    <h2 class="section__title" id="work-title">Selected work</h2>
+    <a class="section__link" href="{{ '/portfolio/' | relative_url }}">All projects</a>
+  </div>
+  {%- assign featured = site.portfolio | where: "featured", true | sort: "order" %}
+  <div class="grid">
+    {%- for p in featured %}
+    {% include tile.html project=p %}
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section section--light" id="experience" aria-labelledby="exp-title">
+  <div class="section__head">
+    <h2 class="section__title" id="exp-title">Experience</h2>
+  </div>
+  {% include experience.html %}
+</section>
+
+<section class="section" aria-labelledby="tools-title">
+  <div class="section__head">
+    <h2 class="section__title" id="tools-title">Tools I use</h2>
+  </div>
+  {% include tools.html %}
+</section>
+
+{% include contact.html %}

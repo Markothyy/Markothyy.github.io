@@ -1,6 +1,32 @@
 ---
-title: "Mini Rocket Fin Control System"
-excerpt: "A tabletop rocket fin control demonstrator using an Arduino Uno R4, MPU-6050 IMU, PCA9685 servo driver, I2C LCD, four servo-actuated fins, and a 3D printed airframe."
+short_title: "Active fin control system"
+summary: "A tabletop demonstrator that reads orientation from an IMU and drives four servo-actuated fins to correct pitch and roll."
+category: "Controls"
+context: "ME 3204 Mechatronics"
+year: "2026"
+role: "Design, electronics, and code"
+tools: "Arduino, C/C++, MPU-6050, PCA9685, Fusion 360"
+status: "Complete"
+featured: true
+order: 5
+math: true
+facts:
+  - label: "Attitude estimate"
+    value: "Complementary filter, α = 0.97"
+  - label: "Control"
+    value: "Proportional, gain 1.8"
+  - label: "Fin travel"
+    value: "±40° from center"
+  - label: "Airframe"
+    value: "137 mm diameter, 3D printed"
+links:
+  - label: "Project report (PDF)"
+    url: "/assets/files/Mini_Rocket_Fin_Control_Report.pdf"
+  - label: "Code on GitHub"
+    url: "https://github.com/Markothyy/RocketFinControlSystem"
+  - label: "CAD model"
+    url: "https://a360.co/3PvCZI4"
+title: "Active fin attitude control system"
 header:
   image: /assets/img/rocket-fin-control/system-labeled.jpg
   teaser: /assets/img/rocket-fin-control/system-labeled.jpg
@@ -13,15 +39,12 @@ gallery:
     title: "CAD Measurements"
 ---
 
-# Mini Rocket Fin Control System
 
 The Mini Rocket Fin Control System is a tabletop mechatronics demonstrator that shows how rocket orientation data can be converted into fin motion. The system uses an MPU-6050 inertial measurement unit, an Arduino Uno R4, a PCA9685 servo driver, four CN0023 servos, an I2C LCD screen, and a 3D printed airframe with four 3D printed fins.
 
 The goal was to build a simplified active fin control system. When the airframe is tilted, the IMU measures the motion, the Arduino estimates pitch and roll, and the servos move the fins in response.
 
 ![Mini Rocket Fin Control System](/assets/img/rocket-fin-control/system-labeled.jpg)
-
-**[Read the full project report (PDF)](/assets/files/Mini_Rocket_Fin_Control_Report.pdf)** · **[View the code on GitHub](https://github.com/Markothyy/RocketFinControlSystem)**
 
 ## Project Summary
 
@@ -135,23 +158,23 @@ The Arduino uses both sensor measurements to estimate pitch and roll.
 
 The accelerometer estimates roll and pitch using gravity:
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>roll<sub>accel</sub> = atan2(a<sub>y</sub>, a<sub>z</sub>)</strong>
-</div>
+$$
+\text{roll}_{\text{accel}} = \operatorname{atan2}(a_y,\ a_z)
+$$
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>pitch<sub>accel</sub> = atan2(-a<sub>x</sub>, √(a<sub>y</sub><sup>2</sup> + a<sub>z</sub><sup>2</sup>))</strong>
-</div>
+$$
+\text{pitch}_{\text{accel}} = \operatorname{atan2}\left(-a_x,\ \sqrt{a_y^2 + a_z^2}\right)
+$$
 
 Where:
 
 | Variable | Meaning |
 |---|---|
-| a<sub>x</sub> | Acceleration measured along the x-axis |
-| a<sub>y</sub> | Acceleration measured along the y-axis |
-| a<sub>z</sub> | Acceleration measured along the z-axis |
-| roll<sub>accel</sub> | Roll estimate from the accelerometer |
-| pitch<sub>accel</sub> | Pitch estimate from the accelerometer |
+| $$a_x$$ | Acceleration measured along the x-axis |
+| $$a_y$$ | Acceleration measured along the y-axis |
+| $$a_z$$ | Acceleration measured along the z-axis |
+| $$\text{roll}_{\text{accel}}$$ | Roll estimate from the accelerometer |
+| $$\text{pitch}_{\text{accel}}$$ | Pitch estimate from the accelerometer |
 
 The accelerometer is useful because it can sense the direction of gravity. However, it can become noisy when the model is shaken or moved quickly.
 
@@ -159,31 +182,31 @@ The accelerometer is useful because it can sense the direction of gravity. Howev
 
 The gyroscope measures angular velocity. To estimate angle from the gyroscope, the code uses:
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>new angle = old angle + angular velocity × Δt</strong>
-</div>
+$$
+\text{new angle} = \text{old angle} + \omega \, \Delta t
+$$
 
 For roll:
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>roll<sub>gyro</sub> = roll + g<sub>x</sub>Δt</strong>
-</div>
+$$
+\text{roll}_{\text{gyro}} = \text{roll} + g_x \, \Delta t
+$$
 
 For pitch:
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>pitch<sub>gyro</sub> = pitch + g<sub>y</sub>Δt</strong>
-</div>
+$$
+\text{pitch}_{\text{gyro}} = \text{pitch} + g_y \, \Delta t
+$$
 
 Where:
 
 | Variable | Meaning |
 |---|---|
-| g<sub>x</sub> | Gyroscope rotation rate used for roll |
-| g<sub>y</sub> | Gyroscope rotation rate used for pitch |
+| $$g_x$$ | Gyroscope rotation rate used for roll |
+| $$g_y$$ | Gyroscope rotation rate used for pitch |
 | Δt | Time between readings |
-| roll<sub>gyro</sub> | Roll estimate predicted from the gyroscope |
-| pitch<sub>gyro</sub> | Pitch estimate predicted from the gyroscope |
+| $$\text{roll}_{\text{gyro}}$$ | Roll estimate predicted from the gyroscope |
+| $$\text{pitch}_{\text{gyro}}$$ | Pitch estimate predicted from the gyroscope |
 
 The gyroscope is good for smooth short-term motion. The problem is that small measurement errors can build up over time, which causes drift.
 
@@ -193,19 +216,19 @@ The complementary filter combines the accelerometer and gyroscope estimates.
 
 The filter equations used in the code are:
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>roll = α(roll + g<sub>x</sub>Δt) + (1 - α)roll<sub>accel</sub></strong>
-</div>
+$$
+\text{roll} = \alpha\left(\text{roll} + g_x \, \Delta t\right) + (1 - \alpha)\, \text{roll}_{\text{accel}}
+$$
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>pitch = α(pitch + g<sub>y</sub>Δt) + (1 - α)pitch<sub>accel</sub></strong>
-</div>
+$$
+\text{pitch} = \alpha\left(\text{pitch} + g_y \, \Delta t\right) + (1 - \alpha)\, \text{pitch}_{\text{accel}}
+$$
 
 In the final code:
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>α = 0.97</strong>
-</div>
+$$
+\alpha = 0.97
+$$
 
 This means the filter mostly follows the gyroscope estimate, while the accelerometer gives a smaller correction.
 
@@ -254,13 +277,13 @@ If the measured angle is very small, treat it as zero
 
 The code also smooths the pitch and roll command:
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>currentPitch = 0.8(currentPitch) + 0.2(measuredPitch)</strong>
-</div>
+$$
+\text{currentPitch} = 0.8\,(\text{currentPitch}) + 0.2\,(\text{measuredPitch})
+$$
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>currentRoll = 0.8(currentRoll) + 0.2(measuredRoll)</strong>
-</div>
+$$
+\text{currentRoll} = 0.8\,(\text{currentRoll}) + 0.2\,(\text{measuredRoll})
+$$
 
 This prevents sudden jumps in fin position and makes the system look more controlled.
 
@@ -270,37 +293,37 @@ The fin control is proportional. This means a larger tilt causes a larger fin mo
 
 The gain value used in the code is:
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>K = 1.8</strong>
-</div>
+$$
+K = 1.8
+$$
 
 The gain controls how strongly the fins respond.
 
 For example, if the model tilts by 10 degrees:
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>fin correction = 1.8 × 10 = 18°</strong>
-</div>
+$$
+\text{fin correction} = 1.8 \times 10^\circ = 18^\circ
+$$
 
 The servos are centered at 90 degrees. The correction is added or subtracted from 90 degrees.
 
 The equations are:
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>top fin = 90° + Kθ</strong>
-</div>
+$$
+\text{top fin} = 90^\circ + K\theta
+$$
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>bottom fin = 90° - Kθ</strong>
-</div>
+$$
+\text{bottom fin} = 90^\circ - K\theta
+$$
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>right fin = 90° + Kφ</strong>
-</div>
+$$
+\text{right fin} = 90^\circ + K\phi
+$$
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>left fin = 90° - Kφ</strong>
-</div>
+$$
+\text{left fin} = 90^\circ - K\phi
+$$
 
 Where:
 
@@ -367,9 +390,9 @@ In a real rocket, the fins do not simply move for visual effect. They change the
 
 A simplified aerodynamic relationship is:
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>F = 1/2 ρV<sup>2</sup>AC<sub>L</sub></strong>
-</div>
+$$
+F = \tfrac{1}{2}\, \rho V^2 A\, C_L
+$$
 
 Where:
 
@@ -379,13 +402,13 @@ Where:
 | ρ | Air density |
 | V | Airspeed |
 | A | Fin area |
-| C<sub>L</sub> | Lift coefficient |
+| $$C_L$$ | Lift coefficient |
 
 The moment created by the fin force can be estimated as:
 
-<div style="font-size:1.15em; margin: 1em 0;">
-<strong>M = FL</strong>
-</div>
+$$
+M = F L
+$$
 
 Where:
 

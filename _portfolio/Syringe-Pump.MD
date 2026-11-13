@@ -1,6 +1,15 @@
 ---
-title: "Rapid Prototype Syringe Pump"
-excerpt: "A DIY medical syringe pump using additive manufacturing techniques and microelectronics."
+summary: "A stepper-driven syringe pump that delivers 0.1 to 5 mL/min from 10 and 20 mL syringes."
+category: "Mechatronics"
+context: "Rapid Prototyping"
+year: "2025"
+tools: "Arduino, C/C++, Fusion 360, FFF printing"
+featured: false
+order: 20
+links:
+  - label: "Code on GitHub"
+    url: "https://github.com/Markothyy/Syringe-Pump-Project-Code"
+title: "Rapid prototype syringe pump"
 header:
   image: /assets/img/Bettersyringpump.png
   teaser: /assets/img/rendersyringe.png
@@ -64,7 +73,7 @@ Syringe pumps are motor-driven devices used to deliver precise volumes of fluid 
 
 # Design Description 
 ## Mechanical operation of the syringe pump
-The syringe pump works by using a lead screw driven by a stepper motor. The plunger is moved forward or backward by a carriage that rides on a smooth rod using linear bearings.The design of the syringe pump allows for multiple syringe diameters by making the slots on both the carriage and the end support able to hold and support either syringe size. This allows for the general design of the syringe pump to work well for both, as only the code needs to know what diameter syringe is being used. The model itself can easily hold either size while still allowing for regular output (no vibrations or looseness).
+The syringe pump works by using a lead screw driven by a stepper motor. The plunger is moved forward or backward by a carriage that rides on a smooth rod using linear bearings.
 ## Multi-syringe compatibility
 The design of the syringe pump allows for multiple syringe diameters by making the slots on both the carriage and the end support able to hold and support either syringe size. This allows for the general design of the syringe pump to work well for both, as only the code needs to know what diameter syringe is being used. The model itself can easily hold either size while still allowing for regular output (no vibrations or looseness).
 ## Button, switch, and LED functionality 
@@ -78,8 +87,8 @@ The syringe pump is programmed using an Arduino Uno and the AccelStepper library
 In the setup phase, the Arduino initializes all button inputs and LED outputs. The primary control flow is handled in the loop() function, which continuously monitors the state of the latching button (to toggle the pump between the running and paused state), the limit switch (to detect when the syringe is empty), and the two momentary buttons (to manually move the pump forward or backward while paused). Each of these inputs is debounced in software to ensure reliability.
 The syringe's inner diameter is used to calculate the cross-sectional area of the plunger, which is then factored into the stepsPerSecond equation. This converts a desired fluid flow into motor steps, based on the physical dimensions and mechanical characteristics of the system.
 The LEDs provide feedback to the user: green indicates the pump is running, yellow indicates it's paused, and red signals that the syringe is empty (triggered by the limit switch).
-## Operating Limits 
-The theoretical maximum flow rate would be based on the maximum speed that the stepper motor can run out which is 1000 . This means that the maximum flow 𝑆𝑡𝑒𝑝𝑠/𝑠 rate for the small syringe would be 6.54 , and the maximum flow rate for the large 𝑚𝐿/𝑚𝑖𝑛 syringe would be 10.08 . 𝑚𝐿/𝑚𝑖𝑛 The smallest theoretical output would be that which is output by one step which is 0.109 μL for the small syringe and 0.168 μL for the large syringe.
+## Operating Limits
+The theoretical maximum flow rate is set by the stepper motor's top speed of 1,000 steps/s. That gives a maximum flow rate of 6.54 mL/min for the small syringe and 10.08 mL/min for the large syringe. The smallest theoretical output, a single step, is 0.109 μL for the small syringe and 0.168 μL for the large syringe.
 ## Code for Syringe Pump 
 [Code Repository](https://github.com/Markothyy/Syringe-Pump-Project-Code/tree/main).
 
