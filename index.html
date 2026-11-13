@@ -2,8 +2,16 @@
 layout: default
 title: "Mark Sedek"
 body_class: "is-dark is-home"
+# Background image behind the name. Leave empty for plain black.
+hero_image: ""
+hero_image_position: "center"
 ---
 <section class="hero" aria-labelledby="hero-title">
+  {%- if page.hero_image and page.hero_image != "" %}
+  <div class="hero__bg" aria-hidden="true" style="--hero-pos: {{ page.hero_image_position | default: 'center' }}">
+    <img src="{{ page.hero_image | relative_url }}" alt="">
+  </div>
+  {%- endif %}
   <h1 class="hero__title" id="hero-title">
     <span class="hero__line"><span>Mark Sedek</span></span>
     <span class="hero__line"><span>Mechanical</span></span>
