@@ -1,6 +1,7 @@
 ---
 short_title: "Microfluidic particle sorter"
-summary: "A resin-printed mold for a PDMS device that sorts particles by size using pinch flow fractionation."
+summary: "Resin-printed mold for a PDMS microfluidic device that sorts 150 μm and 500 μm particles by pinch flow fractionation."
+math: true
 category: "Microfluidics"
 context: "CHBE 4200"
 tools: "Resin printing, PDMS casting"
@@ -12,70 +13,86 @@ header:
   teaser: /assets/img/web/IMG_3049.jpg
 ---
 
-# Introduction
+## Principle
 
-Pinch flow fractionation (PFF) is a microfluidic sorting technique that separates particles by size using only fluid flow. Particles are squeezed against a wall in a narrow pinched channel, where larger particles are physically blocked from getting as close to the wall as smaller ones due to their radius. When the channel suddenly expands, this small positional difference is amplified across the broad section, directing each particle size into a separate outlet. For more detailed information on the underlying principles of pinch flow fractionation, see <a href="/assets/img/Asger.pdf">Primary source PDF</a>
+Pinch flow fractionation (PFF) sorts particles by size using flow alone. Particles are pressed against one wall in a narrow pinch channel, where larger particles cannot approach the wall as closely as smaller ones. At the sudden expansion into the broad section, this small offset is amplified, directing each size class to its own outlet. [Primary source (PDF)](/assets/img/Asger.pdf)
 
-Resin printed molds are coated with parylene prior to casting PDMS because uncured resin inhibits the PDMS from curing properly, and parylene acts as a thin barrier layer between the two materials preventing interference.
+**Applications**
 
-One specific application of PFF is sorting drug carrying microparticles for targeted cancer treatment. For a particle to reach a tumor site, it needs to be small enough to travel through narrow blood vessels without affecting surrounding tissue. A traditional filter can only separate particles by a fixed pore size, either it passes or it does not. PFF can sort particles into multiple precise size ranges in one continuous flow, making it far more suitable for medical manufacturing where size consistency directly affects whether the drug reaches its target. Beyond drug delivery, PFF has hypothetical applications in water quality testing, where microplastic particles of different sizes need to be sorted and identified, and in blood diagnostics, where separating cell types by size is a critical first step in analysis.
+- Sorting drug-carrying microparticles for targeted cancer treatment, where particle size determines transport through narrow vessels; PFF separates multiple size ranges in one continuous flow, unlike fixed-pore filtration
+- Microplastic sorting for water quality testing
+- Cell separation by size for blood diagnostics
 
-# Design Theory
+## Design
 
-A symmetric approach was chosen for this design. To determine where to place the outlet boundaries, the Y₀ equation was used to calculate where each particle size would end up in the broad section after the pinch.
+Symmetric layout. The $$y_0$$ relation was used to predict each particle size's lateral position in the broad section after the pinch.
 
-With a pinch width of 0.70 mm and a broad section width of 15 mm, the small particles (150 μm) were calculated to sit 1.6 mm from the pinched wall, and the large particles (500 μm) at 5.4 mm. The boundary between the small and large particle outlets was placed at the midpoint between these two positions, at 3.5 mm. The fraction of flow each outlet receives is proportional to its opening width divided by the total broad section width. The small outlet carries 24.3%, the large outlet 28.3%, and the buffer outlet 18.7%. The remaining percentage is occupied by the solid PDMS walls separating the channels.
+| Parameter | Value |
+|---|---:|
+| Pinch width, $$w_p$$ | 0.70 mm |
+| Broad section width, $$w_b$$ | 15 mm |
+| Small particle (150 μm) position from wall | 1.6 mm |
+| Large particle (500 μm) position from wall | 5.4 mm |
+| Small/large outlet boundary | 3.5 mm |
+| Small particle outlet opening | 3.414 mm |
+| Large particle outlet opening | 3.978 mm |
+| Buffer outlet opening | 2.631 mm |
+| Small particle outlet channel length | 19.435 mm |
+| Large particle outlet channel length | 19.443 mm |
+| Buffer outlet channel length | 21.733 mm |
+| Outlet post diameter | 2.2 mm |
+| Outlet post spacing (center to center) | ≥ 11 mm |
 
-Key dimensions of the device are as follows:
-  **Pinch width (wₚ):** 0.70 mm
-  **Broad section width (w_b):** 15 mm
-  **Small particle outlet width:** 3.414 mm opening at broad section exit
-  **Large particle outlet width:** 3.978 mm opening at broad section exit
-  **Buffer outlet width:** 2.631 mm opening at broad section exit
-  **Outlet post diameter:** 2.2 mm
-  **Outlet post spacing (center to center):** ≥ 11 mm
-  **Small particle outlet channel length:** 19.435 mm
-  **Large particle outlet channel length:** 19.443 mm
-  **Buffer outlet channel length:** 21.733 mm
+Flow fraction to each outlet is proportional to its opening width over the broad section width: 24.3% small, 28.3% large, and 18.7% buffer, with the remainder occupied by PDMS walls.
 
 ![Sketch of device dimensions](/assets/img/Dimensionscorrected.png)
 
-To ensure each outlet pulls its intended fraction of flow without disrupting adjacent streams, the channels were designed to fan out at different angles from the broad section. This creates different resistances between channels a longer narrower channel is harder to push fluid through, so it naturally limits how much flow enters it. The buffer outlet is intended to be the shortest and widest channel, giving it the lowest resistance so it carries the largest fraction of the flow, while the particle outlets carry smaller controlled fractions. This resistance difference is what keeps each stream in its correct outlet and prevents particles from being pushed into the wrong channel. In the final design, the buffer channel ended up being the longest of the three. Ideally this would be corrected in a future iteration by shortening the buffer path and lengthening the particle outlet channels. Another fix would be the broad section being longer as a smaller broad section heavily effects the separation of the particles.
+Outlets fan out at different angles to set relative channel resistance, keeping each stream in its intended outlet. The buffer outlet was intended to be the shortest and widest (lowest resistance); in the final design it was the longest of the three.
 
-# Instructions
+## Fabrication
 
-The most important steps for creating a microfluidic device with resin printing begin with designing the CAD model with the printer's minimum feature size in mind, as features that are too small will not print accurately and more importantly the particles will not go through. The mold must be printed with the bottom surface flat on the build plate to ensure a smooth sealing surface. After printing, the mold should be washed and checked for any uncured resin inside the channels, as this will prevent the PDMS from curing correctly. When casting PDMS, the mix ratio must be followed precisely, because too much or too little hardener will affect the final properties of the device. Finally, both surfaces must be plasma treated before bonding the PDMS to the glass slide to seal the device.
+1. Design the CAD within the printer's minimum feature size so channels print accurately and pass the particles.
+2. Print the mold with its bottom surface flat on the build plate for a smooth sealing face.
+3. Wash the mold and clear uncured resin from the channels, which would inhibit PDMS curing.
+4. Coat the mold in parylene as a barrier between resin and PDMS.
+5. Cast PDMS at the specified mix ratio.
+6. Plasma treat the PDMS and glass slide, then bond to seal.
 
-<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b6028112e76dd85967fe0f8?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
+<div class="media-frame">
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b6028112e76dd85967fe0f8?mode=embed" width="100%" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0" title="Microfluidic device CAD model" style="display:block;border:0;"></iframe>
+</div>
 
+![Cast PDMS device](/assets/img/web/IMG_3050.jpg)
 
-![Picture of the casted device](/assets/img/web/IMG_3050.jpg)
+![Plasma treatment](/assets/img/web/Plasma-Treating-Image-2.jpg)
 
+## Process selection
 
-![Plasma treating process](/assets/img/web/Plasma-Treating-Image-2.jpg)
+Form 3+ SLA resin printing was selected for:
 
-# Discussion
+- Minimum feature size small enough for PFF channel geometry, beyond FFF capability
+- Watertight parts
+- Smooth surface finish for a leak-free glass bond
 
-Resin printing was chosen over other manufacturing techniques for several reasons. The high resolution of the Form 3+ SLA printer, with a small minimum feature size, allows for the precise small scale channel geometries required for pinch flow fractionation, features that would not be achievable with standard FDM (FFF) printing. Resin prints are also watertight, which is critical for a microfluidic device that must contain and direct fluid without leaking. Additionally, the smooth surface finish produced by resin printing is necessary for bonding a glass slide to seal the device, since a rougher surface would prevent a proper seal and cause leakage along the edges.
+## Testing
 
-To handle a wider range of particle sizes, the design could be modified to include multiple outlet channels of varying lengths, each corresponding to a different size range. More channels would allow finer separation between size groups that are closer together. Flow separators could also be incorporated at the point where the broad section meets the outlets, physically dividing the streams before they enter their respective channels and reducing the chance of particles crossing into the wrong outlet.
+![Testing setup](/assets/img/web/IMG_3049.jpg)
 
-The lower limit on particle size is set by two main factors. First, particles smaller than the surface roughness of the channels cannot follow predictable streamlines and will instead interact with the channel walls. Second, the minimum feature size of the printer limits how small the pinch channel can be made, which directly limits how small the particles can be while still achieving separation.
+<div class="media-frame">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mm7DW0skopM" title="Device test video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display:block;width:100%;aspect-ratio:16/9;height:auto;border:0;"></iframe>
+</div>
 
-# Testing Results
+**Results.** Partial separation; most particles exited through the top channel.
 
-Testing demonstrated partial particle separation, indicating that the device was able to perform pinch flow fractionation to some degree. However, the separation quality was limited by flaws in the final models design. For example. the broad section did not provide sufficient space for the particles to separate as cleanly as intended before reaching the outlet boundaries. Majority of particles went into the top channel. Testing also revealed that the inlet design contributed to this reduced performance as I talked about earlier. The inlet walls appeared to make the incoming flow less controlled as it entered the pinch region. Additionally, the curved left edge of the broad section produced vortices as shown in the video, which disturbed the streamlines (the path of the particles) and heavily reduced the effectiveness of particle sorting.
+- Broad section too short for particles to separate fully before the outlet boundaries
+- Inlet walls made incoming flow less controlled entering the pinch
+- The curved left edge of the broad section generated vortices that disrupted particle streamlines
 
-# Testing
+## Improvements
 
-![Picture of testing setup](/assets/img/web/IMG_3049.jpg)
+- Lengthen the broad section
+- Shorten the buffer path and lengthen the particle outlet channels to restore the intended resistance balance
+- Add outlet channels of varying length for finer separation across more size ranges
+- Add flow separators where the broad section meets the outlets
 
-
-
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/Mm7DW0skopM"
-title="YouTube video player"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard write; encrypted media; gyroscope; picture in picture; web share"
-allowfullscreen>
-</iframe>
+**Lower size limit.** Set by channel surface roughness, below which particles interact with the walls rather than following streamlines, and by the printer's minimum feature size, which bounds the pinch width.

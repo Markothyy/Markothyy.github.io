@@ -1,13 +1,13 @@
 ---
 title: "Tunnel boring machine tooling"
 short_title: "TBM tooling and storage"
-summary: "Tool stations, cutter-ring storage, and a part-locating system for two tunnel boring machines, designed during a summer internship."
+summary: "$20K tooling subsystem for the MB1 and MB2 tunnel boring machines: gantry tool stations, cutter-ring storage, and a pick-to-light part locator."
 category: "Tooling and storage"
 context: "The Boring Company"
 year: "2026"
 role: "Tunnel Engineering Intern"
 tools: "SOLIDWORKS, SOLIDWORKS FEA, ESP32, Google Apps Script"
-status: "In use on both machines"
+status: "In daily use on both machines"
 featured: true
 order: 2
 image: /assets/img/tbm/tunnel-site.jpg
@@ -25,27 +25,32 @@ facts:
     value: "80+"
 ---
 
-## Context
+## Problem
 
-Crews in the tunnel are kept small, about six people per shift across day and night shifts, to limit how many people are underground at once. Before this work, tools and parts had no fixed home. Things were regularly lost or damaged, and finding the right part slowed the crew down.
+Crews of about six per shift, across day and night shifts, are kept small to limit underground personnel. Tools and parts had no fixed storage locations and were regularly lost or damaged, slowing maintenance and repairs.
 
 ## Gantry tool stations
 
-I owned the tooling subsystem for both machines: a tool station on each TBM gantry for drill bits, sockets, consumables, hand tools, and cutterhead maintenance hardware, plus a rack for larger items like drills, bandsaws, and torque wrenches. I produced the SOLIDWORKS fabrication drawings, weld drawings, and BOMs for the custom tooling and storage.
+Owned the tooling subsystem for both machines. A tool station on each TBM gantry holds drill bits, sockets, consumables, hand tools, and cutterhead maintenance hardware. A separate rack stores large tools, including drills, bandsaws, and torque wrenches. Deliverables included SOLIDWORKS fabrication drawings, weld drawings, and BOMs for all custom tooling and storage, applying DFM/DFA.
 
 ## Cutter-ring storage
 
 <figure>
   <img src="{{ '/assets/img/tbm/cutterhead.jpg' | relative_url }}" alt="TBM cutterhead with blue disc cutters installed" loading="lazy">
-  <figcaption>A TBM cutterhead with its disc cutters installed.</figcaption>
+  <figcaption>TBM cutterhead with disc cutters installed.</figcaption>
 </figure>
 
-The machines use roughly 100 cutter rings at about 60 lb each, around 6,000 lb in all. I designed a storage rack with waterjet-cut locating plates that hold each ring in place. A buckling analysis in SOLIDWORKS FEA led to exterior bracing and cross-members every four rings to keep the rack stable under that load.
+- Storage for approximately 100 cutter rings at 60 lb each, about 6,000 lb total
+- Waterjet-cut locating plates hold each ring in position
+- SOLIDWORKS buckling FEA drove the addition of exterior bracing and cross-members every four rings
 
 ## Pick-to-light part locator
 
-Hydraulic fittings were the hardest parts to find: over 100 types of adapters, plugs, caps, and crimps spread across 80+ bins. I built a pick-to-light system using an ESP32 driving LEDs at each bin, with a Google Form, Google Sheets, and Apps Script behind it. A crew member submits the part they need and the right bin lights up. Finding a part used to take up to two minutes for someone unfamiliar with the bins; now it takes a few seconds.
+- 80+ bins covering 100+ hydraulic part types: adapters, plugs, caps, and crimps
+- ESP32-driven LEDs at each bin, controlled through Google Forms, Google Sheets, and Apps Script
+- A submitted part request lights the matching bin
+- Part lookup reduced from up to two minutes to a few seconds
 
-## In the field
+## Field operations
 
-I also operated excavators and forklifts and worked as a ground spotter for crane lifts during active tunneling.
+Operated excavators and forklifts and served as ground spotter for crane lifts during active tunneling.

@@ -1,8 +1,8 @@
 ---
 title: "Avionics bay"
-summary: "Avionics bays for the team's subscale and full-scale rockets: a 3D-printed sled for the altimeters, batteries, and arming switches, mounted between CNC-machined bulkheads."
+summary: "Subscale and full-scale avionics bays: a 3D-printed PETG sled for altimeters, batteries, and rotary switches, mounted to CNC-machined bulkheads with threaded rods."
 category: "Flight hardware"
-context: "Vanderbilt Aerospace Design Lab"
+context: "Vanderbilt Aerospace Design Laboratory"
 year: "2025–2026"
 role: "Design"
 tools: "SOLIDWORKS, PETG printing"
@@ -23,6 +23,7 @@ facts:
 
 ## Design
 
-I designed avionics bays for both the subscale and full-scale vehicles. Each bay holds the altimeters, their batteries, rotary arming switches, and Wago connectors for the wiring.
-
-The components mount to a 3D-printed PETG sled, which is held between CNC-machined bulkheads by threaded rods anchored to the aft plate.
+- Bays for both the subscale and full-scale vehicles
+- Houses altimeters, batteries, rotary arming switches, and Wago connectors
+- Components mount to a 3D-printed PETG sled
+- Sled held between CNC-machined bulkheads by threaded rods anchored to the aft plate

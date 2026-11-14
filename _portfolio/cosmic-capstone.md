@@ -1,10 +1,10 @@
 ---
 title: "In-space manufacturing payload"
 short_title: "In-space manufacturing payload"
-summary: "A semi-autonomous payload that molds, cures, and stows small resin parts in orbit, designed by a four-person senior design team for the COSMIC Capstone Challenge."
+summary: "Semi-autonomous ISAM payload for Arkisys's Bosuns Locker Max that injection-molds and UV-cures resin parts in orbit, then transfers them to a bin by robot arm."
 category: "Space hardware"
 context: "Senior design, COSMIC Capstone"
-year: "2026–2027"
+year: "2026–present"
 role: "Mechanical and hardware design"
 tools: "CAD, trade studies"
 status: "In progress"
@@ -21,25 +21,27 @@ facts:
     value: "UV light"
 ---
 
-## The challenge
+## Challenge
 
-The COSMIC Capstone Challenge asks university teams to design a payload for Arkisys's Bosuns Locker Max that chains three or more operations to demonstrate an orbital manufacturing or assembly capability. The payload has to fit the host's volume and power limits.
+The COSMIC Capstone Challenge tasks university teams with a payload for Arkisys's Bosuns Locker Max that chains three or more operations to demonstrate an orbital manufacturing or assembly capability within the host's volume and power limits. Four-person senior design team.
 
-## How it works
+## Concept of operations
 
-The payload runs a short manufacturing sequence on its own once it receives a command:
+1. Activation and print command
+2. Resin pumped toward the mold
+3. Mold filled with UV-curable resin
+4. UV cure
+5. Part extraction from the mold
+6. Robot arm transfer to a collection bin
 
-1. A user activates the machine and sends a print command.
-2. Resin is pumped toward the mold.
-3. The mold fills with UV-curable resin.
-4. UV light cures the resin.
-5. The finished part is extracted from the mold.
-6. A robot arm places the part in a collection bin.
+Sensors and imaging provide fault detection at each process step.
 
-Sensors and imaging check for errors at several steps along the way.
+## Responsibilities
 
-## My part
+- Mechanical and hardware design across the full payload
+- System requirements and concept of operations
+- CAD for launch, vacuum, microgravity, and thermal constraints
 
-I work on mechanical and hardware design across the payload, from defining requirements and the concept of operations to CAD that has to account for launch loads, vacuum, microgravity, and thermal limits.
+## Curing trade study
 
-I also did the curing trade study, comparing UV light against laser curing on power, thermal, vacuum, and microgravity constraints. We chose UV for its lower power draw and better fit for in-space operation.
+Led a trade study comparing UV and laser curing against power, thermal, vacuum, and microgravity constraints. UV selected for lower power draw and suitability for in-space operation.

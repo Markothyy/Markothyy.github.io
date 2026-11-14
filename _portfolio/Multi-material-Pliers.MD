@@ -1,5 +1,5 @@
 ---
-summary: "Print-in-place pliers with rigid jaws and a TPU section that springs them back open."
+summary: "Two-material printed pliers: rigid ABS jaws joined by a dovetail to a TPU 95A center section that acts as the return spring."
 category: "Additive manufacturing"
 year: "2026"
 tools: "Fusion 360, multi-material FFF printing"
@@ -15,26 +15,43 @@ gallery:
 
    
 ---
-# Design Theory  
-Print in place applications are used in various industies such as the aerospace and automative industry. For example, print in place techniques can be used to make [prototype bearings](https://core-electronics.com.au/guides/print-in-place-tips/). Within the [aerospace industry](https://www.bakerindustriesinc.com/blog/design-freedom-unleashed-how-3d-printing-enables-complex-aerospace-components/) this technique can be used to make intakes/airducts and fixtures making manufacturing these pieces quicker. My design is meant to replicate this technique as a very simplified version of a pair of pliers. I first defined what filiments I should use. Then I assigned ABS to the arms/jaws for rigidity and TPU 95A to the center section to act as a spring that reopens the pliers after each squeeze. With the jaw length set to 85.051 mm, the ABS jaws provide a stiff, precise grip while the TPU element supplies the force that a spring would on real pliers. The key rationale was the interface between rigid ABS and TPU: because multi-material bonding depends on factors like surface energy/chemistry, and shrinkage/cooling behavior. I treated the ABS TPU transition as a dovetail style form fit joint, rather than using a multimaterial printer that would print the two materials and bond them together before completing the part. Using multimaterial printers can sacrifice time, and bring up the possibility of print failure since the filiments being used are alternating within each layer. Below was a center piece I had fabricated before reaching the final product. While this infill style till can make the pliers functional, the optimal infill would be rectilinear, since we are counting on the infill supports to "fail" so that the pliers work.
 
-# Slicing 
-In order for the pliers to work, some variables need to be changed within the print settings of the slicing software. First is to change the perimiter and shells settings. Which removes the solid layers called "Horizontal shells" from both the top and bottom. Doing this setting now exposes the infill of the center part. Next is to change the infill shape setting. For TPU, Gyroid or another infill type may be automatically selected as it is the best setting for most TPU prints just due to the mechanical properties of TPU. I switched this setting to rectilinear because we want the infill "fail" so that it acts as a spring for my pliers. The rectilinear infill for the TPU part was set at 10%, other low values work as well, keeping in mind however the ability for the TPU to "spring" back. Adjusting the perminiters are varible to the size of the part being printed, in my case, I set my perimiters to the center piece to a value of 3, which allows it to be flexable but not too strong so it still can accomplish the goal of the project. On my slicer they were automattically set to 3 layers which were changed to 0, again to show the TPU "supports" that will ultimately allow us to bend the pliers. The infill settings for my ABS jaws and arms were set to 23% infill to give it a strong structure so its capable of deforming the TPU piece without breaking. Below is a video proving that the pliers are capable of gripping onto objects, in my example a resistor, and a picture of the G-code preview of the center piece after adjustments have been made. Also below is the G-code preview of the jaws and arm, a CAD model to observe the online version of the model. 
+## Design
+
+Print-in-place and multi-material techniques are used across aerospace and automotive manufacturing, for example in [prototype bearings](https://core-electronics.com.au/guides/print-in-place-tips/) and [aerospace intakes, ducts, and fixtures](https://www.bakerindustriesinc.com/blog/design-freedom-unleashed-how-3d-printing-enables-complex-aerospace-components/). These pliers apply the technique in simplified form.
+
+- **Arms and jaws:** ABS for rigidity; 85.05 mm jaw length
+- **Center section:** TPU 95A, acting as the spring that reopens the pliers after each squeeze
+- **ABS–TPU interface:** dovetail form-fit joint rather than a co-printed bond. Multi-material bonding depends on surface chemistry and differential shrinkage, and alternating filaments within each layer adds print time and failure risk.
+
+## Slicer settings
+
+The TPU center relies on its infill deforming as a spring, so the default solid shells are removed to expose it.
+
+| Setting | TPU center | ABS arms and jaws |
+|---|---|---|
+| Top and bottom horizontal shells | 3 → 0 | Default |
+| Perimeters | 3 | Default |
+| Infill pattern | Rectilinear (default gyroid replaced) | Default |
+| Infill density | 10% | 23% |
+
+Rectilinear infill buckles predictably under load and springs back, giving the return force. Other low densities also work, provided the TPU still recovers. The 23% ABS infill keeps the arms stiff enough to deform the TPU without failing.
 
 <video width="700" autoplay loop muted playsinline>
   <source src="{{ '/assets/img/IMG_2523-ezgif.com-video-to-gif-converter.mp4' | relative_url }}" type="video/mp4">
 </video>
+<p class="media-caption">Pliers gripping a resistor.</p>
 
-![Arms and Jaws Piece Preview](/assets/img/Screenshotofpliersinslicer.png)
+![Slicer preview of the arms and jaws](/assets/img/Screenshotofpliersinslicer.png)
 
-![Center TPU Piece Preview](/assets/img/Centerpartslicer.png)
+![Slicer preview of the TPU center section](/assets/img/Centerpartslicer.png)
 
+## CAD model
 
+<div class="media-frame">
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b6028115441302eab5825b7?mode=embed" width="100%" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0" title="Multi-material pliers CAD model" style="display:block;border:0;"></iframe>
+</div>
 
-# CAD Model
-<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b6028115441302eab5825b7?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+## Final product
 
-
-# Final Product Photo Gallery  
-
-{% include gallery caption="Final Product made in Vanderbilt Digital Fabrication Labratory using student made Voron printers. (Left to right) Figure 1 is the final product after tolerance adjustments and slicer adjustments, Figure 2 shows the original center piece with different infill settings, these settings would have made the pliers harder to squeeze." %}
+{% include gallery caption="Printed in the Vanderbilt Digital Fabrication Laboratory on student-built Voron printers. Left: final part after tolerance and slicer adjustments. Right: an earlier center section with different infill settings, which made the pliers harder to squeeze." %}

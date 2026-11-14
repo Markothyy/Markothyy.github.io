@@ -1,5 +1,5 @@
 ---
-summary: "A multi-material paddle with a carbon fiber ABS body, an Onyx handle core, and a TPU grip and edge guard."
+summary: "Multi-part, multi-material paddle: carbon fiber ABS body, Onyx inner handle, TPU grip, and an interchangeable TPU edge guard."
 category: "Additive manufacturing"
 tools: "Fusion 360, multi-material FFF printing"
 featured: false
@@ -9,28 +9,37 @@ title: "3D-printed pickleball paddle"
 
 ## Overview
 
-I designed this pickleball paddle as a multi-material, multi-part build that focused on strength, and overall usability. Rather than making the entire paddle from one material, I split the design into sections so each part could better serve its purpose. The paddle body was made from Carbon Fiber ABS, the inner handle was made from Onyx filament, the outer handle was made from TPU, and the interchangeable edge guard was also made from TPU. I chose each material based on its use and how much force it will take. For instance the inner handle will take the majoirty of the force (bending and its a weak point) so I made it out of the strongest filiment available to me. 
+Multi-part paddle with each component printed in the material best suited to its loads and function.
 
-## Paddle Body
+| Component | Material | Rationale |
+|---|---|---|
+| Paddle body | Carbon fiber ABS | Rigid, lightweight striking face |
+| Inner handle | Onyx | Strongest available filament for the highest-stress region |
+| Outer handle | TPU | Softer, higher-traction grip |
+| Edge guard | TPU | Replaceable wear part that absorbs ground contact |
 
-The main paddle body was made from Carbon Fiber ABS. I chose this material because I wanted the face of the paddle to feel rigid and structural while still being lightweight enough to keep the paddle usable. This lightweight was also done through decreacing the infill percentage. Since this is the part that takes the impact when striking the ball, it needed to hold its shape well and provide a solid core for the rest of the design. The paddle body is connected using heatset inserts connected to the inner handle. 
+## Paddle body
 
-## Handle Design
+- Carbon fiber ABS for stiffness at low weight
+- Reduced infill percentage to lower mass
+- Joined to the inner handle with heat-set inserts
 
-The handle was designed in two parts, an inner handle made from Onyx filament and an outer handle made from TPU. I made it like this since I knew the handle would be taking the most force during games and will likely be the first area to fail. Thus, I made it into two parts with the iner handle having a friction fit with the outer handle. Also why I chose onyx for the most rigid material able to withstand heavy rotational forces etc. 
+## Handle
 
-Around that rigid core, I added a TPU outer handle. This gave the grip a softer and more comfortable feel in the hand and improved traction compared to a fully rigid handle.
+- Two-part design; the handle sees the highest bending and torsional loads and is the most likely failure point
+- Onyx inner core carries the load
+- TPU outer handle friction-fits over the core for grip and comfort
 
-## Interchangeable Edge Guard
+## Edge guard
 
-The interchangeable edge guard was made from TPU. I wanted the edge guard to act as a protective wear component, so using a more flexible material made sense. Since the perimeter of the paddle is one of the areas most likely to contact the ground, the guard needed to absorb minor impacts and scrapes without damaging the main paddle body.
+TPU guard around the perimeter absorbs impacts and scrapes from ground contact and can be replaced without reprinting the paddle body.
 
-## Weight and Balance
+## Weight and balance
 
-A big part of the project was thinking about how the paddle would feel in use, not just how it would look in CAD. The material choices affected that directly. Most of the weight can be contributed to the paddle just due to its size, next would be the handle as it is dense. Having too heavy of a pickleball paddle makes it not so functional, too light and playing a decent game can be difficult. The overall weight of my paddle is 
+Most of the mass sits in the paddle body due to its size, followed by the dense handle. Material and infill choices were set to keep the paddle heavy enough for control without being unwieldy.
 
-## Manufacturing and Assembly
+## Manufacturing
 
-Because of the paddle size, I designed it as a multi-part assembly rather than a single printed object. Breaking the design into separate parts made it easier to print, easier to refine, and easier to assemble. It also made the multi-material layout possible, since each component could be printed in the material best suited to its function.
+The paddle exceeds a single print volume and is split into separately printed parts. This simplifies printing and iteration and enables the multi-material layout.
 
 <!-- Photos not uploaded yet (pickleball-paddle-cover.jpg, -1.jpg, -3.jpg). Add them to assets/img/ and restore the header/gallery front matter to show them. -->

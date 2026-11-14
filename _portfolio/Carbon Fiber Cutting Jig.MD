@@ -1,11 +1,11 @@
 ---
 short_title: "Airframe cutting jig"
-summary: "A jig that holds carbon fiber airframe tubes square to a sliding cutter for clean, repeatable cuts on rocket body sections."
+summary: "Cutting jig holding ±1/32 in perpendicularity and flatness on carbon fiber airframe and coupler sections from 4 in to 4 ft long."
 category: "Tooling"
-context: "Vanderbilt Aerospace Design Lab"
+context: "Vanderbilt Aerospace Design Laboratory"
 year: "2025"
 role: "Design and build"
-status: "In use by the team"
+status: "Required for all airframe cuts"
 featured: true
 order: 6
 facts:
@@ -21,27 +21,26 @@ header:
   teaser: /assets/img/1767337100637.jpg
 ---
 
-# Problem
+## Problem
 
-The Vanderbilt Aerospace Design Lab builds its rocket airframes and couplers from carbon fiber tubes that have to be cut to length. Cutting by hand makes it hard to keep the cut edge square to the tube axis, and an edge that isn't square causes misalignment where sections join. The team's vehicle requirements call for 1/32 in of flatness across the entire cut edge.
+Carbon fiber airframe tubes and couplers are cut to length in-house. Hand cuts are difficult to keep square to the tube axis, and out-of-square edges cause misalignment at section joints. The team's vehicle requirements specify 1/32 in flatness across the full cut edge.
 
-# Design
+## Design
 
-I designed and built a jig that holds the tube in fixed cradles and guides a Dremel cutter at a set position:
+- Fixed cradles hold the tube on a common axis
+- Aluminum backstop with a locating slot sets section length and prevents shifting
+- Micro-adjustable sliding Dremel attachment sets the exact cut location
+- Accommodates airframe and coupler sections from 4 in to 4 ft
 
-* An aluminum backstop with a locating slot sets the section length and keeps the tube from shifting.
-* A sliding Dremel attachment can be micro-adjusted to dial in the exact cut location.
-* The jig handles airframe and coupler sections from 4 in to 4 ft long.
+## Procedure
 
-# How It's Used
+1. Set the backstop to the rough section length and lock it.
+2. Micro-adjust the Dremel slide to the required dimension.
+3. Plunge the Dremel into the tube wall and lock it with a wedge.
+4. Rotate the tube by hand about its axis to complete the cut.
 
-1. Set the backstop to the rough section length and lock it in place.
-2. Micro-adjust the Dremel slide to the exact required dimension.
-3. Turn on the Dremel, plunge it slowly into the tube wall, and lock it in place with a wedge.
-4. Rotate the tube by hand about its axis until the cut is complete.
+## Results
 
-# Results
-
-* Holds ±1/32 in perpendicularity and flatness on the cut edge, meeting the team requirement
-* A prototype was qualified during subscale construction, and the team requires the jig for all airframe cuts
-* Faster and more repeatable than cutting by hand
+- ±1/32 in perpendicularity and flatness, meeting the team requirement
+- Prototype qualified during subscale construction
+- Use required for all airframe cuts (VADL Requirement 2.1.12)

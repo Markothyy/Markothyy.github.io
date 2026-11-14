@@ -232,7 +232,13 @@ p { margin: 0; }
   letter-spacing: -0.025em;
   font-weight: 430;
 }
-.intro__note { max-width: 36ch; color: var(--text-dim); font-size: 1.0625rem; line-height: 1.55; }
+.intro__list { margin: 0; display: grid; gap: 22px; }
+.intro__list div { display: grid; gap: 4px; border-top: 1px solid var(--line); padding-top: 12px; }
+.intro__list dt {
+  font-size: 0.6875rem; font-weight: 500; font-variation-settings: "wdth" 125;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--steel); margin-bottom: 4px;
+}
+.intro__list dd { margin: 0; color: var(--text-dim); font-size: 0.9375rem; line-height: 1.5; }
 @media (max-width: 800px) { .intro { grid-template-columns: 1fr; } }
 
 /* --------------------------------------------------------------------------
