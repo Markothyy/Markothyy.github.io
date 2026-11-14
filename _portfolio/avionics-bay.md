@@ -9,9 +9,8 @@ tools: "SOLIDWORKS, PETG printing"
 status: "Design complete"
 featured: true
 order: 4
-tile_style: light
-image: /assets/img/vadl/avionics-bay-cad.png
-image_fit: contain
+image: /assets/img/vadl/avionics-bay-wide.jpg
+teaser: /assets/img/vadl/avionics-bay-square.jpg
 image_alt: "SOLIDWORKS model of the avionics bay assembly"
 facts:
   - label: "Vehicles"

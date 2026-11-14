@@ -3,13 +3,19 @@ layout: default
 title: "Mark Sedek"
 body_class: "is-dark is-home"
 # Background image behind the name. Leave empty for plain black.
-hero_image: ""
+hero_image: "/assets/img/tbm/cutterhead-wide.jpg"
+hero_image_mobile: "/assets/img/tbm/cutterhead-tall.jpg"
 hero_image_position: "center"
 ---
 <section class="hero" aria-labelledby="hero-title">
   {%- if page.hero_image and page.hero_image != "" %}
   <div class="hero__bg" aria-hidden="true" style="--hero-pos: {{ page.hero_image_position | default: 'center' }}">
-    <img src="{{ page.hero_image | relative_url }}" alt="">
+    <picture>
+      {%- if page.hero_image_mobile %}
+      <source media="(max-width: 760px)" srcset="{{ page.hero_image_mobile | relative_url }}">
+      {%- endif %}
+      <img src="{{ page.hero_image | relative_url }}" alt="">
+    </picture>
   </div>
   {%- endif %}
   <h1 class="hero__title" id="hero-title">

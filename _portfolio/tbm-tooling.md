@@ -10,6 +10,10 @@ tools: "SOLIDWORKS, SOLIDWORKS FEA, ESP32, Google Apps Script"
 status: "In use on both machines"
 featured: true
 order: 2
+image: /assets/img/tbm/tunnel-site.jpg
+image_position: "center 38%"
+image_alt: "Tunnel boring site with conveyor and lifting structures"
+teaser: /assets/img/tbm/tunnel-site-square.jpg
 facts:
   - label: "Subsystem budget"
     value: "$20K"
@@ -30,6 +34,11 @@ Crews in the tunnel are kept small, about six people per shift across day and ni
 I owned the tooling subsystem for both machines: a tool station on each TBM gantry for drill bits, sockets, consumables, hand tools, and cutterhead maintenance hardware, plus a rack for larger items like drills, bandsaws, and torque wrenches. I produced the SOLIDWORKS fabrication drawings, weld drawings, and BOMs for the custom tooling and storage.
 
 ## Cutter-ring storage
+
+<figure>
+  <img src="{{ '/assets/img/tbm/cutterhead.jpg' | relative_url }}" alt="TBM cutterhead with blue disc cutters installed" loading="lazy">
+  <figcaption>A TBM cutterhead with its disc cutters installed.</figcaption>
+</figure>
 
 The machines use roughly 100 cutter rings at about 60 lb each, around 6,000 lb in all. I designed a storage rack with waterjet-cut locating plates that hold each ring in place. A buckling analysis in SOLIDWORKS FEA led to exterior bracing and cross-members every four rings to keep the rack stable under that load.
 

@@ -21,7 +21,7 @@ layout: default
   </header>
 
   {%- if hero_img %}
-  <figure class="project__hero{% if page.image_fit == 'contain' %} project__hero--contain{% endif %}">
+  <figure class="project__hero{% if page.image_fit == 'contain' %} project__hero--contain{% endif %}"{% if page.image_position %} style="--img-pos: {{ page.image_position }}"{% endif %}>
     <img src="{{ hero_img | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
   </figure>
   {%- endif %}

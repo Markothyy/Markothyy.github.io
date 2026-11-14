@@ -158,11 +158,12 @@ p { margin: 0; }
   padding: clamp(40px, 7vh, 96px) var(--gutter) 0;
 }
 .hero__bg { position: absolute; inset: 0; z-index: -1; }
+.hero__bg picture { display: block; width: 100%; height: 100%; }
 .hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: var(--hero-pos, center); }
 .hero__bg::after {
   content: ""; position: absolute; inset: 0;
   background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.66) 60%, rgba(0, 0, 0, 0.92) 100%);
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0.94) 100%);
 }
 .hero__title {
   margin: auto 0;
@@ -464,7 +465,7 @@ p { margin: 0; }
 }
 
 .project__hero { margin: 0 var(--gutter); background: var(--graphite); }
-.project__hero img { width: 100%; max-height: 82vh; object-fit: cover; }
+.project__hero img { width: 100%; max-height: 82vh; object-fit: cover; object-position: var(--img-pos, center); }
 .project__hero--contain { background: #ffffff; padding: clamp(24px, 4vw, 56px); }
 .project__hero--contain img { height: clamp(240px, 28vw, 400px); width: auto; max-width: 100%; margin: 0 auto; object-fit: contain; }
 
