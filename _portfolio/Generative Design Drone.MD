@@ -15,6 +15,15 @@ title: "Generative design drone"
 header:
   image: /assets/img/drone.jpg
   teaser: /assets/img/drone.jpg
+facts:
+  - label: "Material"
+    value: "Aluminum AlSi10Mg"
+  - label: "Manufacturing"
+    value: "Additive"
+  - label: "Safety factor limit"
+    value: "1"
+  - label: "Buckling safety factor limit"
+    value: "1.5"
 ---
 
 ## Overview
@@ -27,6 +36,20 @@ Lightweight quadcopter airframe developed with Autodesk Fusion 360 generative de
 - **Obstacle geometry:** keep-out zones excluded from the solution
 - **Load cases:** motor thrust and landing impact
 - **Manufacturing method:** additive manufacturing, suited to the organic geometry generative design produces
+
+<figure>
+  <img src="{{ '/assets/img/drone/design-space.png' | relative_url }}" alt="Fusion generative design setup showing a yellow starting shape, green preserve regions, and red obstacle cylinders at the four motor locations" loading="lazy">
+  <figcaption>Study setup: starting shape (yellow), preserve geometry (green), and obstacle geometry (red) at the four motor locations.</figcaption>
+</figure>
+
+## Structural study
+
+Fusion structural study with aluminum AlSi10Mg, an additive manufacturing constraint, a safety factor limit of 1, and a buckling safety factor limit of 1.5. Outcomes are compared across iterations before selecting a geometry to refine.
+
+<figure>
+  <img src="{{ '/assets/img/drone/outcome-viewport.jpg' | relative_url }}" alt="Generated airframe outcome from the Fusion structural study, an organic plate-like form with four motor mount openings" loading="lazy">
+  <figcaption>Study outcome, iteration 2. Solve in progress.</figcaption>
+</figure>
 
 ## Analysis
 

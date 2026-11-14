@@ -1,4 +1,22 @@
 (function () {
+  var video = document.querySelector("[data-bg-video]");
+  var btn = document.querySelector("[data-video-toggle]");
+  if (!video) return;
+
+  function setPaused(paused) {
+    if (paused) { video.pause(); } else { video.style.visibility = ""; var p = video.play(); if (p && p.catch) p.catch(function () {}); }
+    if (btn) {
+      btn.textContent = paused ? "Play video" : "Pause video";
+      btn.setAttribute("aria-pressed", paused ? "true" : "false");
+    }
+  }
+
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) { video.removeAttribute("autoplay"); video.style.visibility = "hidden"; setPaused(true); }
+  if (btn) btn.addEventListener("click", function () { setPaused(!video.paused); });
+})();
+
+(function () {
   var nav = document.querySelector("[data-nav]");
   var toggle = document.querySelector("[data-nav-toggle]");
   if (!nav || !toggle) return;
