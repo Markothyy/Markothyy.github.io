@@ -47,8 +47,8 @@ Lightweight quadcopter airframe developed with Autodesk Fusion 360 generative de
 Fusion structural study with aluminum AlSi10Mg, an additive manufacturing constraint, a safety factor limit of 1, and a buckling safety factor limit of 1.5. Outcomes are compared across iterations before selecting a geometry to refine.
 
 <figure>
-  <img src="{{ '/assets/img/drone/outcome-viewport.jpg' | relative_url }}" alt="Generated airframe outcome from the Fusion structural study, an organic plate-like form with four motor mount openings" loading="lazy">
-  <figcaption>Study outcome, iteration 2. Solve in progress.</figcaption>
+  <img src="{{ '/assets/img/drone/study-outcome.jpg' | relative_url }}" alt="Generated quadcopter frame from the Fusion structural study: four cylindrical motor mounts joined to a central body by branching members" loading="lazy">
+  <figcaption>Generated frame from the structural study.</figcaption>
 </figure>
 
 ## Analysis
